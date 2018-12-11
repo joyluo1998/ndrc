@@ -1,0 +1,741 @@
+/* 初始化代码 */
+
+body,
+div,
+span,
+p,
+img,
+input,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+a,
+strong,
+em,
+del,
+i,
+ins {
+    margin: 0;
+    padding: 0;
+    /* 清除标签的默认内外边距 */
+}
+
+a {
+    text-decoration: none;
+    color: #999;
+}
+
+a:hover {
+    color: #f10215;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+    /* display: block; */
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+}
+
+i {
+    font-style: normal;
+}
+
+body {
+    font: 12px/100% "微软雅黑";
+    background-color: #fff;
+}
+
+.w {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* 头部顶端 */
+
+
+.w1260 {
+    width: 1260px;
+    margin: 0 auto;
+}
+.topBar {
+    height: 55px;
+    background-color: #fbfbfb;
+}
+
+.topBar a {
+    color: #000;
+}
+
+.topBar-inner {
+    position: relative;
+    height: 55px;
+}
+
+.topBar-logo a {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 133px;
+    height: 44px;
+    display: block;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url("../resource/tongren/logo_b5525b7.png") no-repeat;
+}
+
+.topBar-login {
+    position: absolute;
+    right: 225px;
+}
+
+.topBar-login a {
+    display: inline-block;
+    height: 12px;
+    padding: 20px 12px;
+    border-bottom: 3px solid #fbfbfb;
+    transition: all .1s;
+}
+
+.topBar-login a:hover {
+    border-bottom: 3px solid #bc2e2e;
+    background: linear-gradient(#F3F3F3, #FEFEFE);
+}
+
+.topBar-toggle {
+    position: absolute;
+    right: 100px;
+    width: 125px;
+    height: 52px;
+    transition: all .1s;
+    text-align: center;
+    line-height: 52px;
+    color: #bc2e2e;
+}
+
+.topBar-toggle:hover {
+    border-bottom: 3px solid #bc2e2e;
+    background: linear-gradient(#F3F3F3, #FEFEFE);
+}
+
+.topBar-toggle i {
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+}
+
+.topBar-toggle i::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid transparent;
+    border-bottom: 0;
+    border-top-color: #bc2e2e;
+}
+
+.topBar-ad {
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 55px;
+    overflow: hidden;
+}
+
+.topBar-ad a {
+    position: relative;
+    display: block;
+    height: 53px;
+    width: 100px;
+    border-bottom: 2px solid #fbfbfb;
+    background-color: #fbfbfb;
+    line-height: 52px;
+    text-align: center;
+    transition: all .5s;
+}
+
+.topBar-ad a:hover {
+    border-bottom: 2px solid #bc2e2e;
+    background: linear-gradient(#F3F3F3, #FEFEFE);
+}
+
+.topBar-toggle:hover+.topBar-menu {
+    height: 475px;
+}
+
+.topBar-menu {
+    position: absolute;
+    top: 55px;
+    height: 0;
+    transition: all .3s ease-out;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.topBar-menu:hover {
+    height: 475px;
+}
+
+.topBar-menu .classify-title {
+    width: 100%;
+    height: 39px;
+    border-top: 1px solid #e1e3e3;
+    color: #bc2e2e;
+    background-color: rgba(100, 100, 100, .1);
+    line-height: 39px;
+    font-size: 14px;
+    text-indent: 20px;
+}
+
+.topBar-menu .list-title {
+    font: 700 14px '΢���ź�';
+}
+
+.topBar-menu .game-list {
+    width: 115px;
+    padding: 10px 0 0 20px;
+}
+
+.topBar-menu .game-list li {
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+}
+
+.topBar-menu .game-list a {
+    display: block;
+    width: 100%;
+}
+
+.topBar-menu .game-list a:hover {
+    color: #bc2e2e;
+}
+
+.topBar-menu .pc-game {
+    position: absolute;
+    left: 0;
+    width: 299px;
+    height: 475px;
+    background-color: rgba(255, 255, 255, .95);
+}
+
+.topBar-menu .pc-game .viewport {
+    width: 135px;
+    overflow: hidden;
+}
+
+.topBar-menu .pc-game .container {
+    width: 299px;
+}
+
+.topBar-menu .pc-game .athletics {
+    position: relative;
+    right: 0;
+    width: 105px;
+}
+
+.topBar-menu .mobile-game {
+    position: absolute;
+    right: 132px;
+    width: 828px;
+    height: 475px;
+    border-left: 1px solid #e1e3e3;
+    background-color: rgba(255, 255, 255, .95);
+    overflow: hidden;
+}
+
+.topBar-menu .mobile-game .container {
+    width: 996px;
+}
+
+.topBar-menu .mobile-game .container .game-list {
+    width: 115px;
+}
+
+.topBar-menu .mobile-game .container .game-list:nth-child(2),
+.topBar-menu .mobile-game .container .game-list:nth-child(3),
+.topBar-menu .mobile-game .container .game-list:nth-child(4) {
+    width: 125px;
+}
+
+.topBar-menu .more-game {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    color: #fff;
+    background: #bc2e2e;
+    padding: 7px 0 7px 10px;
+    line-height: 14px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    cursor: pointer;
+}
+
+
+.topBar-menu .game-tools {
+    position: absolute;
+    right: 0;
+    border-left: 1px solid #e1e3e3;
+    width: 131px;
+    height: 475px;
+    background-color: rgba(255, 255, 255, .95);
+}
+
+.topBar-menu .game-tools .game-list {
+    width: 105px;
+}
+
+.topBar-menu .game-tools .topBar-btn {
+    width: 105px ;
+    height: 18px;
+    line-height: 18px ;
+    margin: 5px 0;
+    display: inline-block;
+    background-position: 0 -338px;
+    text-indent: 25px;
+    color: #bc3030;
+}
+
+.topBar-btn,
+.topBar-hot,
+.topBar-1st,
+.topBar-new {
+    background: url(../imgs/sprite-w_7fc7459.png) no-repeat
+}
+
+.topBar-1st {
+    background-position: right -267px
+}
+
+.topBar-hot {
+    background-position: right -144px
+}
+
+.topBar-new {
+    background-position: right -206px
+}
+
+/* 主体部分 */
+.main {
+   
+    height: 689px;
+    width: 100%;
+    background: url("../resource/tongren/bg_tongren_385d28b.jpg") no-repeat center top;
+    position: relative;
+    background-color: #fff;
+}
+.main .main-logo  a{
+        display: block;
+        width: 282px;
+        height: 109px;
+        background: url("../resource/tongren/logo_0b8443b.png") no-repeat;
+        position: absolute;
+        top: 20px;
+        left: 12px;
+}
+.main .main-nav {
+    width: 726px;
+    height: 32px;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+
+}
+.main .main-nav a {
+        width: 121px;
+        height: 32px;
+        float: left;
+        background: url("../resource/tongren/i_1_f8e822c.png") no-repeat center left;
+        position: relative;
+    }
+.main .main-nav  a p{
+    width: 100%;
+    height: 32px;
+    text-align: center;
+    font-family: "\5FAE\8F6F\96C5\9ED1","Microsoft YaHei";
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 32px;
+}
+.main .main-nav .one {
+    position: absolute;
+    top: 3px;
+    left: 21.5px;
+    display: none;
+}
+
+.main .main-nav a:first-child {
+    background: none;
+}
+.main .main-code {
+    width: 120px;
+    height: 142px;
+    background: #fff;
+    position: absolute;
+    top: 40px;
+    left: 4px;
+    display: none;
+}
+.main a .main-code img {
+    width: 120px;
+    height: 120px;
+}
+.main a .main-code p {
+    width: 100%;
+    background: 0 0;
+    font-size: 12px;
+    color: #000;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    top: 118px;
+}
+.main .main-nav a:nth-child(2):hover .main-code{
+    display: block;
+}
+.main .main-tit {
+    position: absolute;
+    /* left: 450px; */
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+    width: 394px;
+    height: 44px;
+    background: url("../resource/tongren/tit4_85079ee.png") no-repeat;
+}
+
+
+
+
+
+
+
+/* ------------------------------ */
+.shop {
+    margin: 0 auto;
+    width: 490px;
+    height: 42px;
+    margin-top: 40px;
+}
+.shop li {
+    position: relative;
+    width: 121px;
+    /* height: 42px; */
+    display: inline-block;
+    font-family: "\5FAE\8F6F\96C5\9ED1","Microsoft YaHei";
+    font-size: 18px;
+    font-weight: 600;
+    /* line-height: 42px; */
+    color: #252525;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+    margin-right: 2px;
+}
+.shop li:last-child {
+    margin-right: 0px;
+}
+
+
+/* top   */
+.shop img {
+    display: none;
+}
+.shop .one {
+    display: block;
+}
+.shop .two {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----动态视频 */
+.video {
+    position: relative;
+    height: 1973px;
+    width: 1200px;
+    margin: 0 auto;
+    /* background-color: pink; */
+    margin-top: 80px;
+    padding-left: 102px;
+
+}
+
+.video li .video-date {
+    width: 231px;
+    height: 130px;
+    position: absolute;
+    top: 13px;
+    left: 12px;
+    cursor: pointer;
+}
+
+.video li:first-child .video-date {
+    width: 505px;
+    height: 284px;
+    position: absolute;
+    top: 13px;
+    left: 15px;
+}
+
+
+.video li {
+    width: 257px;
+    height: 183px;
+    border: 1px solid #000;
+    float: left;
+    position: relative;
+    margin-right: 18px;
+    margin-bottom: 18px;
+}
+.video li:first-child {
+    width: 535px;
+    height: 380px;
+}
+
+.video li .imgBox {
+    width: 231px;
+    height: 130px;
+    position: absolute;
+    /* top: 13px;
+    left: 12px; */
+    cursor: pointer;
+}
+.video li:first-child .imgBox {
+    width: 505px;
+    height: 284px;
+    position: absolute;
+    top: 13px;
+    /* left: 15px; */
+}
+.video li .boxTet {
+    width: 231px;
+    height: 20px;
+    position: absolute;
+    top: 150px;
+    left: 12px;
+}
+.video li:first-child .boxTet {
+    width: 505px;
+    height: 50px;
+    position: absolute;
+    top: 315px;
+    left: 15px;
+}
+.video li .boxTet p {
+    width: 180px;
+    height: 21px;
+    font-size: 14px;
+    color: #000;
+    line-height: 21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.video li:first-child .boxTet p {
+    width: 500px;
+    font-size: 16px;
+}
+.video li .boxTet a {
+    width: 21px;
+    max-width: 31px;
+    height: 21px;
+    padding-right: 20px;
+    background-size: 16px 16px;
+    background: url("../resource/tongren/i_vote_e13dc51.png") no-repeat right center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    color: #000;
+    line-height: 21px;
+    text-align: right;
+}
+.video li:first-child .boxTet a {
+    width: auto;
+    max-width: 54px;
+    padding-right: 26px;
+    background: url("../resource/tongren/i_vote_e13dc51.png") no-repeat center;
+    background-size: 21px 21px;
+    font-size: 16px;
+    right: 5px;
+    top: 28px;
+}
+.video li .video-date a {
+    display: block;
+    width: 52px;
+    height: 52px;
+    background: url("../resource/tongren/btn_video_1edef56.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -26px;
+    margin-top: -26px;
+}
+
+.video li:first-child .video-date a {
+    display: block;
+    width: 83px;
+    height: 83px;
+    background: url("../resource/tongren/btn_video_1edef56.png") no-repeat;
+    top: 50%;
+    left: 50%;
+    margin-left: -41.5px;
+    margin-top: -41.5px;
+}
+
+
+.video .getMore {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    width: 1200px;
+    height: 50px;
+    margin: 40px auto 0;
+    background-color: #cdcdcd;
+    font-size: 20px;
+    line-height: 50px;
+    color: #717171;
+    font-weight: 400;
+    text-align: center;
+}
+.video li s {
+    width: 231px;
+    height: 130px;
+    position: absolute;
+    cursor: pointer;
+    background-color: #000;
+    opacity: .5;
+}
+.video li:first-child s {
+    width: 505px;
+    height: 284px;
+    position: absolute;
+    top: 13px;
+    background-color: #000;
+    opacity: .5;
+    /* left: 15px; */
+}
+
+
+.footer {
+    margin-top: 50px;   
+    height: 52px;   
+    background-color: black;
+    padding-top: 22px;
+}
+.footer .footer-src {
+    margin: 0 auto;
+    height: 52px;
+    width: 840px;
+
+    /* background-color: green; */
+
+}
+.footer .footer-src .footer-nav {
+    width: 300px;
+    height: 48px;
+    /* background-color: blue; */
+    float: left;
+}
+.footer .footer-src .footer-logo a img {
+    float: left;
+}
+.footer .footer-src .footer-logo2 a img {
+    float: left;
+}
+.footer-list {
+    position: relative;
+    float: left;
+    width: 412px;
+    height: 48px;
+    /* background-color: pink; */
+    color: #ccc;
+}
+.footer-list a {
+    color: #e23a3f;
+}
+.footer span {
+    color: #ccc;
+    position: absolute;
+    left: 0;
+    height: 26px;
+    line-height: 26px;
+    bottom: 7px;
+}
+.footer .footer-list .last {
+    position: absolute;
+    height: 26px;
+    width: 139px;
+    line-height: 26px;
+    right: 0px;
+    background-color: #610000;
+    color: white;
+    bottom: 7px;
+    text-align: center;
+}
+.footer .footer-list .a-name:hover,
+.footer .footer-list .last:hover {
+    text-decoration: underline;
+
+}

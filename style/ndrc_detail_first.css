@@ -1,0 +1,297 @@
+
+
+
+    /*-------------------------弹幕-------------------------*/
+.boxDom {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    z-index: 3;
+}
+
+
+span.biu {
+    width: 300px;
+    height: 40px;
+    position: absolute;
+    overflow: hidden;
+    color: #000;
+    font-size: 16px;
+    line-height: 100%;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+
+/*----------------------第一话 漫画-----------------------*/
+.container {
+    background: url("../resource/images/bg1.jpg") no-repeat fixed;
+    width: 100%;
+    position: relative;
+    height:auto;
+    background-size: 100%;
+    min-width: 1440px;
+}
+
+.container .main {
+    width: 837px;
+    height:auto;
+    background: url("../resource/images/main_bg.png") repeat;
+    margin:0 auto;
+    position: relative;
+    z-index:2;
+}
+
+
+
+.container .returnBox {
+    width: 990px;
+    height: 92px;
+    position: fixed;
+    left: 265px;
+    top: 117px;
+    z-index: 3;
+}
+
+.container .returnBox .returnBtn {
+    display: block;
+    width: 79px;
+    height: 92px;
+    background: url("../resource/images/home.png");
+}
+
+.container .pageBtn .nextBtn {
+    width: 52px;
+    height: 135px;
+    position: fixed;
+    top: 315px;
+    right: 310px;
+    display: block;
+    background: url("../resource/images/nextBtn.png");
+    z-index:4;
+}
+/*-------------------留言框-----------------------*/
+/*.bigMessage {*/
+    /*overflow: hidden;*/
+    /*width: 480px;*/
+    /*height: 679px;*/
+/*}*/
+.message {
+    position: absolute;
+    top:40px;
+    right:0;
+    width: 500px;
+    height: 800px;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+
+.message-inner {
+    position: absolute;
+    width: 433px;
+    height: 679px;
+    background: url("../resource/images/messageScreenRight.png") no-repeat;
+    right: 0;
+    top: 0px;
+    padding-left: 40px;
+    z-index:4;
+    /*overflow: hidden;*/
+}
+
+.message .show {
+    position: absolute;
+    display: block;
+    width: 49px;
+    height: 115px;
+    background: url("../resource/images/right-shou.png");
+    top:50%;
+    margin-top: -57px;
+    left: -30px;
+}
+
+ .hide {
+    display: block;
+    position: fixed;
+    width: 49px;
+    height: 115px;
+    background: url("../resource/images/left-show.png");
+    top: 260px;
+    right: 0;
+     z-index:5;
+     display: none;
+}
+
+.message-inner h2 {
+    display: block;
+    width: 420px;
+    height: 42px;
+    font-size: 20px;
+    font-weight:700;
+    color: #ffffff;
+    line-height: 42px;
+    position: absolute;
+    top: -36px;
+    left: 36px;
+}
+
+.message-inner h2 span {
+    color: #f6ce30;
+}
+
+.message .buttonSwitch {
+    width: 112px;
+    height: 31px;
+
+    padding-top: 39px;
+    margin:0 auto;
+    cursor: pointer;
+}
+
+.off {
+    background: url("../resource/images/hide_btn.png") no-repeat right bottom;
+}
+
+.on {
+    background: url("../resource/images/show_btn.png") no-repeat right bottom;
+}
+
+.message .cont {
+    width: 390px;
+    height: 431px;
+    border-top:1px solid #4d4d4d;
+    border-bottom: 1px solid #4d4d4d;
+    margin:12px auto 0px ;
+    padding-top: 13px;
+    padding-bottom: 20px;
+}
+
+.message .cont .contWarp{
+    outline:none;
+    width: 386px;
+    height: 431px;
+}
+
+.message .cont  ul {
+    overflow: auto;
+}
+
+.message .cont .contWarp li {
+    width:auto;
+    height: 30px;
+    display: block;
+    padding-left: 6px;
+    font-size: 14px;
+    color: #f3f3f3;
+    line-height: 30px;
+}
+
+.message .cont .contWarp li:hover {
+    color: #f6ce30;
+    background: #4d4d4d;
+}
+
+.message .contWarp li span {
+    max-width: 230px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float: left;
+}
+
+.message .contWarp li p{
+    color: #747474;
+    width:auto;
+    float: right;
+}
+
+.message .inputBox {
+    width: 425px;
+    height: 59px;
+    background: url("../resource/images/input_bg.png");
+    margin: 12px auto 0;
+    position: relative;
+}
+
+.message .inputBox input {
+    width: 300px;
+    height: 38px;
+    border:0;
+    background: 0 0;
+    font-size: 16px;
+    color: #262626;
+    padding: 12px 0px 10px 25px;
+    line-height: 38px;
+}
+
+.message .inputBox a {
+    display: block;
+    width: 91px;
+    height: 44px;
+    background: url("../resource/images/enter_btn.png") no-repeat;
+    position: absolute;
+    top: 8px;
+    right: 6px;
+}
+
+
+/*-----------------------------------------------------------*/
+#style-6::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+#style-6::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+#style-6::-webkit-scrollbar-thumb
+{
+    background-color: #f6ce30;
+    background-image: -webkit-linear-gradient(45deg,
+    rgba(255, 255, 255, .2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, .2) 50%,
+    rgba(255, 255, 255, .2) 75%,
+    transparent 75%,
+    transparent)
+}
+
+
+/*-----------------------------------------------------------*/
+
+
+/*--------------------footer----------------------*/
+
+.footer .share {
+    width: 666px;
+    height: 22px;
+    padding:20px 0px 10px ;
+    margin:0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.footer a {
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

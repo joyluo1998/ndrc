@@ -1,0 +1,270 @@
+.w1260 {
+    width: 1260px;
+    margin: 0 auto;
+}
+.topBar {
+    height: 55px;
+    background-color: #fbfbfb;
+}
+
+.topBar a {
+    color: #000;
+}
+
+.topBar-inner {
+    position: relative;
+    height: 55px;
+    z-index:49;
+}
+
+.topBar-logo a {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 133px;
+    height: 44px;
+    display: block;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url("../resource/images/logo_b5525b7.png") no-repeat;
+}
+
+.topBar-login {
+    position: absolute;
+    right: 225px;
+}
+
+.topBar-login a {
+    display: inline-block;
+    height: 12px;
+    padding: 20px 12px;
+    border-bottom: 3px solid #fbfbfb;
+    transition: all .1s;
+}
+
+.topBar-login a:hover {
+    border-bottom: 3px solid #bc2e2e;
+    background: linear-gradient(#F3F3F3, #FEFEFE);
+}
+
+.topBar-toggle {
+    position: absolute;
+    right: 100px;
+    width: 125px;
+    height: 52px;
+    transition: all .1s;
+    text-align: center;
+    line-height: 52px;
+    color: #bc2e2e;
+}
+
+.topBar-toggle:hover {
+    border-bottom: 3px solid #bc2e2e;
+    background: linear-gradient(#F3F3F3, #FEFEFE);
+}
+
+.topBar-toggle i {
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+}
+
+.topBar-toggle i::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid transparent;
+    border-bottom: 0;
+    border-top-color: #bc2e2e;
+}
+
+.topBar-ad {
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 55px;
+    overflow: hidden;
+}
+
+.topBar-ad a {
+    position: relative;
+    display: block;
+    height: 53px;
+    width: 100px;
+    border-bottom: 2px solid #fbfbfb;
+    background-color: #fbfbfb;
+    line-height: 52px;
+    text-align: center;
+    transition: all .5s;
+}
+
+.topBar-ad a:hover {
+    border-bottom: 2px solid #bc2e2e;
+    background: linear-gradient(#F3F3F3, #FEFEFE);
+}
+
+.topBar-toggle:hover+.topBar-menu {
+    height: 475px;
+}
+
+.topBar-menu {
+    position: absolute;
+    top: 55px;
+    height: 0;
+    transition: all .3s ease-out;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.topBar-menu:hover {
+    height: 475px;
+}
+
+.topBar-menu .classify-title {
+    width: 100%;
+    height: 39px;
+    border-top: 1px solid #e1e3e3;
+    color: #bc2e2e;
+    background-color: rgba(100, 100, 100, .1);
+    line-height: 39px;
+    font-size: 14px;
+    text-indent: 20px;
+}
+
+.topBar-menu .list-title {
+    font: 700 14px '΢���ź�';
+}
+
+.topBar-menu .game-list {
+    width: 115px;
+    padding: 10px 0 0 20px;
+}
+
+.topBar-menu .game-list li {
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+}
+
+.topBar-menu .game-list a {
+    display: block;
+    width: 100%;
+}
+
+.topBar-menu .game-list a:hover {
+    color: #bc2e2e;
+}
+
+.topBar-menu .pc-game {
+    position: absolute;
+    left: 0;
+    width: 299px;
+    height: 475px;
+    background-color: rgba(255, 255, 255, .95);
+}
+
+.topBar-menu .pc-game .viewport {
+    width: 135px;
+    overflow: hidden;
+}
+
+.topBar-menu .pc-game .container {
+    width: 299px;
+}
+
+.topBar-menu .pc-game .athletics {
+    position: relative;
+    right: 0;
+    width: 105px;
+}
+
+.topBar-menu .mobile-game {
+    position: absolute;
+    right: 132px;
+    width: 828px;
+    height: 475px;
+    border-left: 1px solid #e1e3e3;
+    background-color: rgba(255, 255, 255, .95);
+    overflow: hidden;
+}
+
+.topBar-menu .mobile-game .container {
+    width: 996px;
+}
+
+.topBar-menu .mobile-game .container .game-list {
+    width: 115px;
+}
+
+.topBar-menu .mobile-game .container .game-list:nth-child(2),
+.topBar-menu .mobile-game .container .game-list:nth-child(3),
+.topBar-menu .mobile-game .container .game-list:nth-child(4) {
+    width: 125px;
+}
+
+.topBar-menu .more-game {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    color: #fff;
+    background: #bc2e2e;
+    padding: 7px 0 7px 10px;
+    line-height: 14px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    cursor: pointer;
+}
+
+
+.topBar-menu .game-tools {
+    position: absolute;
+    right: 0;
+    border-left: 1px solid #e1e3e3;
+    width: 131px;
+    height: 475px;
+    background-color: rgba(255, 255, 255, .95);
+}
+
+.topBar-menu .game-tools .game-list {
+    width: 105px;
+}
+
+.topBar-menu .game-tools .topBar-btn {
+    width: 105px ;
+    height: 18px;
+    line-height: 18px ;
+    margin: 5px 0;
+    display: inline-block;
+    background-position: 0 -338px;
+    text-indent: 25px;
+    color: #bc3030;
+}
+
+.topBar-btn,
+.topBar-hot,
+.topBar-1st,
+.topBar-new {
+    background: url(../resource/images/sprite-w_7fc7459.png) no-repeat
+}
+
+.topBar-1st {
+    background-position: right -267px
+}
+
+.topBar-hot {
+    background-position: right -144px
+}
+
+.topBar-new {
+    background-position: right -206px
+}

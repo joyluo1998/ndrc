@@ -1,0 +1,382 @@
+/*------------------top--------------------------*/
+.topNav {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+}
+
+.topNav a {
+    display: inline-block;
+    width: 121px;
+    height: 32px;
+    text-align: center;
+    font-family: "\5FAE\8F6F\96C5\9ED1", "Microsoft YaHei";
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 32px;
+}
+
+.topNav a:hover {
+    background: url("../resource/images/topNav_h_fd73fae.png") center center no-repeat;
+}
+
+.topNav a.QC-wx {
+    position: relative;
+}
+
+.topNav .QC-wx:hover .QC-code {
+    display: block;
+}
+
+.topNav .QC-code {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    width: 120px;
+    height: 160px;
+    transform: translateX(-50%);
+    transition: all .3s;
+    display: none;
+    background-color: #fff;
+}
+
+.topNav .QC-code img {
+    width: 120px;
+    height: 120px;
+}
+
+.topNav .QC-code u {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+}
+
+.topNav i {
+    height: 32px;
+    text-align: center;
+    font-family: "\5FAE\8F6F\96C5\9ED1", "Microsoft YaHei";
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 32px;
+    float: left;
+}
+/*------------------comics------------------*/
+.top {
+    width: 100%;
+    height: 55px;
+    background-color: #fbfbfb;
+    position: relative;
+
+}
+
+.page2 {
+    width: 100%;
+    height: 1080px;
+    background: url('../resource/images/bg1.jpg') no-repeat center center;
+    /*background-color: pink;*/
+}
+
+ .page2  .w1200 .title2 {
+    width: 374px;
+    height: 118px;
+    margin:0 auto;
+    background: url("../resource/images/NaoDongRiChang.png") no-repeat;
+     position: relative;
+     top: 70px;
+     left:50%;
+     margin-left: -187px;
+}
+
+.w1200 {
+    width: 1200px;
+    height: 1080px;
+    position: relative;
+    margin: 0 auto;
+        /*overflow: hidden;*/
+}
+
+.container {
+    font-family: "\5FAE\8F6F\96C5\9ED1","Microsoft YaHei";
+}
+
+.container .topNav {
+    width: 726px;
+    height: 32px;
+    position: absolute;
+    right: 20px;
+    top: 70px;
+    z-index: 11;
+}
+
+.container .topNav a {
+    width: 111px;
+    height: 32px;
+    float: left;
+    position: relative;
+}
+
+.container .topNav a .qrCode {
+    display: none;
+}
+
+.container .topNav a .qrCode img {
+    width: 120px;
+    height: 120px;
+}
+
+.mask {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .8;
+    display: block;
+    z-index: 50;
+}
+
+.pop {
+    width: 898px;
+    height: 440px;
+    background: url("../resource/images/pop.jpg");
+    z-index: 51;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    opacity: 1;
+    /*margin-top: -220px;*/
+    margin: -200px 0px 0px -400px;
+}
+
+.pop .close {
+    width: 62px;
+    height: 62px;
+    background: url("../resource/images/close.png");
+    position: absolute;
+    top: 0;
+    right: -62px;
+    z-index: 52;
+    transition: all 0.8s;
+}
+
+.pop .close:hover {
+    transform: rotate(360deg)
+}
+
+.float a {
+    display: block;
+    width: 177px;
+    height: 265px;
+    position: absolute;
+    top: 310px;
+    left: 0px;
+    z-index:39;
+    background: url("../resource/images/i_piaofu.png");
+    animation: float 1.5s ease-in-out 0s infinite;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(20px);
+        opacity:0.9;
+    }
+    50%{
+        transform: translateY(0px);
+        opacity:0.5;
+
+    }
+    100%{
+        transform: translateY(20px);
+        opacity:0.8;
+
+
+    }
+
+}
+.w1200 .logo {
+    width: 240px;
+    height: 109px;
+    position: absolute;
+    top: 39px;
+    left: 221px;
+    background-size: 100%;
+}
+
+.BannerBox {
+    width: 100%;
+    height: 725px;
+    margin: 110px auto 0;
+    position: relative;
+}
+
+ .left-arrow {
+    width: 425px;
+    height: 647px;
+    position: absolute;
+    top: 45px;
+    left: -60px;
+    background-size: 81px 210px;
+    background: url("../resource/images/left.png") no-repeat center left;
+    z-index: 10;
+     cursor: pointer;
+}
+
+.right-arrow {
+    width: 425px;
+    height: 647px;
+    position: absolute;
+    top: 45px;
+    right: -60px;
+    background-size: 81px 210px;
+    background: url("../resource/images/right.png") no-repeat center right;
+    z-index:10;
+    cursor: pointer;
+}
+
+.BannerBox .slide {
+    width: 1086px;
+    height: 647px;
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+    overflow: hidden;
+    /*background-color: pink;*/
+    perspective: 1200px;
+}
+
+.slide ul li {
+    /*float: left;*/
+    position: absolute;
+    perspective: 1200px;
+}
+
+.slide ul li {
+    transition-delay: 300ms;
+    position: absolute;
+}
+
+.slide ul li a {
+    display: block;
+    width: 466px;
+    height: 647px;
+    background: url("../resource/images/border.png") no-repeat;
+    position: relative;
+    /*transition-delay: 2ms;*/
+
+}
+
+.slide ul li a img {
+    width: 352px;
+    height: 475px;
+    position: absolute;
+    top: 33px;
+    left: 56px;
+}
+
+.slide ul li a i {
+    display: block;
+    width: 360px;
+    height: 84px;
+    background: url("../resource/images/starttoread.png");
+    position: absolute;
+    top: 508px;
+    left: 52px;
+}
+
+.slide ul li.one {
+    top: 20px;
+    left: 234px;
+    transform: translate3d(-190px, 0px, -200px) rotateX(0deg) rotateY(30deg);
+    z-index : 0;
+}
+
+.slide ul li.two {
+    top: 20px;
+    left: 145px;
+    transform: translate3d(-380px, 0px, -400px) rotateX(0deg) rotateY(60deg);
+    z-index : -1;
+}
+
+.slide ul li.three {
+    top: 55px;
+    left: 60px;
+    transform: translate3d(-525px, 0px, -552px) rotateX(0deg) rotateY(83deg);
+    z-index : -2;
+}
+
+.slide ul li.four {
+    top: 50px;
+    left: 570px;
+    transform: translate3d(525px, 0px, -552px) rotateX(0deg) rotateY(-83deg);
+    z-index : -3;
+}
+
+.slide ul li.five {
+    top: 30px;
+    left: 479px;
+    transform: translate3d(380px, 0px, -400px) rotateX(0deg) rotateY(-60deg);
+    z-index : -2;
+}
+
+.slide ul li.six {
+    top: 30px;
+    left: 404px;
+    transform: translate3d(190px, 0px, -200px) rotateX(0deg) rotateY(-30deg);
+    z-index : -1;
+}
+
+.slide ul li.seven {
+    top: 30px;
+    left: 317px;
+    transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);
+    z-index : 0;
+}
+
+.pageChange {
+    width: 212px;
+    height: 38px;
+    background: url("../resource/images/pageChange_bg.png") no-repeat;
+    position: absolute;
+    left:50%;
+    margin-left: -106px;
+    margin-top: 55px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.pageTo {
+    display: block;
+    width: 36px;
+    height: 38px;
+    cursor: pointer;
+    float: right;
+    transition: all 0.8s;
+}
+
+/*.pageChange:active {*/
+    /*transform: scale(1.3,1.3)*/
+/*}*/
+
+
+
+
+
+
+
+/*-----------------------footer  ---------------------------*/
+.footer {
+    padding-top: 30px;
+    width: 100%;
+    height: 73px;
+    position: relative;
+    z-index:4;
+}
+
+.footer a {
+    color: #666;
+}

@@ -1,0 +1,67 @@
+.swiper-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    width: 380px;
+    height: 230px;
+}
+.swiper-slide img {
+    width: inherit;
+    height: inherit;
+}
+.swiper-pagination-bullet {
+   width: 14px;
+   height: 14px;
+   background: #fff;
+   opacity: 1;
+}
+.swiper-pagination-bullet-active {
+    background: #27ace5;
+}
+
+.content.more {
+    height: 900px;
+}
+
+.content.more .title.head {
+    margin-top: 30px;
+    height: 24px;
+}
+
+.content.more .title.head .title-line {
+    float: left;
+    width: 3px;
+    height: 24px;
+}
+
+.content.more .title.head .title-name {
+    float: left;
+    font-size: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 9px;
+    background-color: inherit;
+}
+
+.content.more .title.head .title-change,
+.content.more .title.head a.title-more {
+    float: right;
+    color: #6e6e6e;
+    margin-right: 50px;
+    cursor: pointer;
+}
+/* 换一换 */
+.content.more  .title-change i#title-change {
+    float: left;
+    width: 19px;
+    height: 16px;
+    background: url('../resource/wonder/sprite-base.png');
+    background-position: -231px -17px;
+}
+
+.content.more .title-change span {
+    float: left;
+    margin-left: 7px;
+}

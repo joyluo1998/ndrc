@@ -1,0 +1,869 @@
+/* 初始化代码 */
+
+body,
+div,
+span,
+p,
+img,
+input,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+a,
+strong,
+em,
+del,
+i,
+ins {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #999;
+}
+
+a:hover {
+    /*color: ;*/
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+    /* display: block; */
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+}
+
+i {
+    font-style: normal;
+}
+
+body {
+    font: 12px/100% "微软雅黑";
+    background-color: #333333;
+    background: url("../../resource/herodata-images/beijing.jpg") top no-repeat;
+    background-position-y: 45px;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/*头部开始*/
+
+.header {
+    height: 45px;
+    background-color: #333333;
+}
+
+.header.nav {
+    height: 45px;
+}
+
+.header .headerLeft {
+    /*float: left;*/
+    margin-left: 13px;
+}
+
+.header .headerLeft li {
+    float: left;
+    color: #b2b2b2;
+    margin-right: 20px;
+    font-size: 12px;
+    line-height: 45px;
+}
+
+
+/*.header .headerLeft li:nth-child(7) a {*/
+
+
+/*background-color: black;*/
+
+
+/*color: #00ffff;*/
+
+
+/*}*/
+
+.header .headerLeft li a:hover {
+    color: #00ffff;
+}
+
+.header .headerRight {
+    float: right;
+    width: 300px;
+    background-color: #333333;
+    right: 3px;
+    margin-top: 8px;
+}
+
+.header .headerRight .search-bar {
+    width: 222px;
+    /*height: 30px;*/
+    border-radius: 22px;
+    background-color: #bbbbbb;
+    float: right;
+}
+
+.header .headerRight input {
+    float: left;
+    height: 30px;
+    width: 160px;
+    margin-left: 15px;
+    background-color: #bbbbbb;
+}
+
+.header .headerRight .fang {
+    float: right;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.header .headerRight span {
+    margin-left: 3px;
+}
+
+#div1 {
+    display: none;
+    position: absolute;
+    top: 45px;
+}
+
+
+/*中间主体*/
+
+.main {
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    /* background-image: url("../../resource/herodata-images/beijing.jpg"); */
+    background-size: 100%;
+    display: block;
+    transform: translateX(-50%);
+    /* margin: 0 auto; */
+}
+
+.loginbar {
+    width: 205px;
+    height: 77px;
+    background: rgba(255, 255, 255, .8);
+    float: right;
+    margin-top: 37px;
+    border-radius: 5px;
+}
+
+.main .loginbar .timer {
+    float: left;
+    margin-left: 20px;
+    margin-top: 27px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    width: 77px;
+    border-radius: 3px;
+    border-bottom: brown 3px solid;
+    background-color: #d91a29;
+    color: white;
+}
+
+.main .loginbar li {
+    float: left;
+    top: 20px;
+    margin-left: 28px;
+    margin-top: 18px;
+}
+
+.main .loginbar li a {
+    color: #d91a29;
+}
+
+.main .loginbar li a:hover {
+    text-decoration: underline;
+}
+
+.main .loginbar li:last-child a {
+    color: #d91a29;
+    font-weight: bold;
+}
+
+
+/* 标题  */
+
+.menu {
+    height: 62px;
+    background-color: pink;
+    margin-top: 150px;
+    background: url("../../resource/herodata-images/caidan.png");
+}
+
+.menu li {
+    float: left;
+    margin-left: 12px;
+    width: 156px;
+    height: 48px;
+    background: url("../../resource/herodata-images/lanse.png");
+    margin-top: 7px;
+}
+
+.menu li a {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    line-height: 48px;
+    padding-left: 32px;
+}
+
+
+/*.menu li:nth-child(2) {*/
+
+
+/*background: url("../../resource/herodata-images/huang.png");*/
+
+
+/*width: 156px;*/
+
+
+/*height: 48px;*/
+
+
+/*}*/
+
+.menu li:hover {
+    background: url("../../resource/herodata-images/huang.png");
+}
+
+.menu .zuihou {
+    float: right;
+    margin-right: 10px;
+    width: 110px;
+    height: 42px;
+    background: url("../../resource/herodata-images/qiandao.png");
+    margin-top: 8px;
+}
+
+
+/*   二维码块    */
+
+.list {
+    height: 418px;
+    background: url("../../resource/herodata-images/erweima.png");
+    margin-top: 10px;
+}
+
+.list .icon {
+    width: 210px;
+    height: 350px;
+    position: relative;
+}
+
+.list .icon span {
+    width: 210px;
+    height: 218px;
+    background: url("../../resource/herodata-images/saoma.png");
+    float: left;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.list .icon .shaomao {
+    position: absolute;
+    text-align: center;
+    width: 158px;
+    height: 9px;
+    left: 45px;
+    top: 45px;
+    animation: scan 3s linear infinite alternate;
+    transform: translateY(100px);
+    z-index: 10;
+    background: url("../../resource/herodata-images/123.png")top center no-repeat;
+    background-size: cover;
+}
+
+@keyframes scan {
+    0% {
+        -webkit-transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(180px);
+    }
+}
+
+.list .icon .ios {
+    width: 184px;
+    height: 60px;
+    background: url("../../resource/herodata-images/ios.png");
+    float: left;
+    margin-top: 8px;
+    margin-left: 32px;
+}
+
+.list .icon a:hover {
+    background-color: rgba(255, 0, 255, 0.5);
+}
+
+.list .icon .anzao {
+    width: 184px;
+    height: 60px;
+    background: url("../../resource/herodata-images/anzao.png");
+    float: left;
+    margin-top: 8px;
+    margin-left: 32px;
+}
+
+
+/*轮播图*/
+
+.scroll {
+    height: 352px;
+    width: 682px;
+    position: relative;
+    float: left;
+    top: -315px;
+    left: 8px;
+}
+
+.list .scroll img {
+    height: 352px;
+    width: 682px;
+}
+
+.list .scroll li span {
+    position: absolute;
+    line-height: 50px;
+    float: left;
+    bottom: 0px;
+    color: white;
+    font-size: 18px;
+    left: 100px;
+}
+
+.list .scroll a {
+    height: 352px;
+    width: 682px;
+}
+
+.main .list .scroll li {
+    position: absolute;
+    display: none;
+}
+
+.main .list .scroll li:first-child {
+    display: block;
+}
+
+.main .list .scroll .fanhui,
+.main .list .scroll .gengduo {
+    position: absolute;
+    background: url("../../resource/herodata-images/gengduo.png");
+    width: 34px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    background-color: rgba(0, 0, 0, .8);
+    font-size: 20px;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+}
+
+.main .list .scroll .fanhui {
+    left: 0px;
+    background: url("../../resource/herodata-images/arrow_right.png");
+}
+
+.main .list .scroll .gengduo {
+    right: 0px;
+}
+
+.main .list .scroll .shop {
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /*margin-bottom: 0px;*/
+    position: absolute;
+    bottom: 0px;
+}
+
+.main .list .scroll .shop .right {
+    color: #b2333a;
+    font-size: 18px;
+    line-height: 50px;
+    padding-left: 45px;
+}
+
+.main .list .scroll .shop .left {
+    color: white;
+    font-size: 18px;
+    line-height: 50px;
+    padding-left: 100px;
+}
+
+
+/*banner*/
+
+.list .banner {
+    height: 350px;
+    width: 280px;
+    background: url("../../resource/herodata-images/kuang.png");
+    float: right;
+    margin-top: -315px;
+    margin-right: 8px;
+}
+
+.list .banner {
+    float: right;
+    margin-right: 13px;
+}
+
+.list .banner li {
+    line-height: 30px;
+}
+
+.list .banner .biaoti {
+    font-size: 18px;
+    text-align: center;
+    color: #333333;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.list .banner li.line {
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+    margin: 10px 12px 0px 12px;
+}
+
+.list .banner li i.icon-icon {
+    font-size: 12px;
+    color: #999;
+    margin-left: 2px;
+}
+
+.list .banner li {
+    margin-left: 6px;
+}
+
+.list .banner li a {
+    color: #333333
+}
+
+.list .banner li span {
+    color: #ff5f37;
+}
+
+.list .banner li a:hover {
+    color: #ff5f37;
+}
+
+
+/*.list .banner li:nth-child(3) a {*/
+
+
+/*color: #f10215;*/
+
+
+/*}*/
+
+
+/*<!--第二模块news-->*/
+
+.news {
+    height: 445px;
+    background: url("../../resource/herodata-images/dier.png");
+    margin-top: 15px;
+    position: relative;
+}
+
+.news .tab {
+    height: 80px;
+    position: absolute;
+}
+
+.news .tab img {
+    position: absolute;
+    left: 50px;
+    top: 35px;
+}
+
+.news .msg {
+    height: 310px;
+    width: 1090px;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+
+.news .msg .submenu {
+    float: left;
+    height: 100px;
+    width: 355px;
+}
+
+.news .msg .vote {
+    float: left;
+}
+
+.news .msg .you {
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.news .msg .you a {
+    font-size: 18px;
+    color: #b7886c;
+    line-height: 20px;
+}
+
+.news .msg .you i {
+    font-size: 14px;
+    color: #434a54;
+    line-height: 18px;
+}
+
+.news .msg .you span {
+    color: #999999;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.news .msg .submenu2 {
+    float: left;
+    height: 100px;
+    width: 355px;
+}
+
+.news .msg .submenu3 {
+    float: left;
+    height: 100px;
+    width: 355px;
+}
+
+.news .msg .submenu4 {
+    float: left;
+    margin-top: 30px;
+    height: 100px;
+    width: 355px;
+}
+
+.news .msg .submenu5 {
+    float: left;
+    margin-top: 30px;
+    height: 100px;
+    width: 355px;
+}
+
+.news .msg .submenu6 {
+    float: left;
+    margin-top: 30px;
+    height: 100px;
+    width: 355px;
+}
+
+
+/*  第三模块*/
+
+.hot {
+    height: 410px;
+    background: url("../../resource/herodata-images/disan.png");
+    margin-top: 20px;
+    position: relative;
+}
+
+.hot .dt_tit {
+    width: 125px;
+    height: 23px;
+    margin: 30px 20px 10px 50px;
+    position: absolute;
+    background: url("../../resource/herodata-images/tao.png");
+}
+
+.hot .link li {
+    width: 120px;
+    height: 34px;
+    left: 20px;
+    margin-left: 30px;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 34px;
+    top: 80px;
+    float: left;
+}
+
+.hot .link li a {
+    color: #cacaca;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hot .link li a:hover {
+    color: #ff7540;
+    border-bottom: 2px solid #ff7540;
+}
+
+
+/*.hot .link li:first-child a {*/
+
+
+/*color: #ff7540;*/
+
+
+/*}*/
+
+.hot .buss {
+    width: 370px;
+    height: 210px;
+    position: absolute;
+    top: 135px;
+    left: 50px;
+}
+
+.hot .buss img {
+    width: 370px;
+    height: 210px;
+}
+
+.hot .btn {
+    width: 480px;
+    height: 250px;
+    position: absolute;
+    top: 135px;
+    left: 450px;
+}
+
+.hot .btn li {
+    height: 23px;
+    line-height: 23px;
+}
+
+.hot .btn li a {
+    font-size: 14px;
+}
+
+.hot .btn li span {
+    color: #ff5f37;
+}
+
+.hot .btn li i {
+    position: absolute;
+    height: 23px;
+    line-height: 23px;
+    right: 15px;
+    color: #999999;
+}
+
+.hot .btn li a:hover {
+    color: #ff5f37;
+}
+
+.hot .zhaopian {
+    width: 236px;
+    height: 325px;
+    float: right;
+    position: absolute;
+    top: 45px;
+    right: 35px;
+    background-image: url(https://mgame-f.netease.com/forum/201807/09/072437q1rndhgqt4gc66a4.png);
+}
+
+.hot .zhaopian img {
+    width: 208px;
+    height: 306px;
+    position: relative;
+    left: 7px;
+    top: 7px;
+}
+
+
+/* footer的开始    */
+
+.footer {
+    height: 175px;
+    margin-top: 1550px;
+    background-color: #333333;
+}
+
+.footer .border {
+    height: 102px;
+    border-bottom: 1px solid red;
+}
+
+.footer .border .slogan {
+    height: 100%;
+}
+
+.footer .slogan li {
+    float: left;
+    margin-right: 91px;
+}
+
+.footer .slogan li i {
+    float: left;
+    width: 36px;
+    height: 42px;
+    margin-top: 30px;
+}
+
+.footer .slogan li span {
+    float: left;
+    font-size: 18px;
+    line-height: 102px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.footer .slogan li:first-child {
+    margin-left: 36px;
+}
+
+.footer .slogan li:last-child {
+    margin-right: 0px;
+}
+
+.footer .slogan li:nth-child(2) i {
+    background-position-y: -43px;
+}
+
+.footer .slogan li:nth-child(3) i {
+    background-position-y: -86px;
+}
+
+.footer .slogan li:nth-child(4) i {
+    background-position-y: -129px;
+}
+
+.footer .help {
+    height: 200px;
+    border-bottom: 1px solid red;
+}
+
+.footer .help ul {
+    float: left;
+    width: 199px;
+}
+
+.footer .help ul:nth-child(5) {
+    width: 100px;
+}
+
+.footer .help li {
+    line-height: 22px;
+}
+
+.footer .help li:first-child {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 32px;
+    margin-top: 16px;
+}
+
+.footer .map {
+    width: 196px;
+    height: 148px;
+    float: right;
+    margin-top: 22px;
+    margin-right: 3px;
+}
+
+.footer .map .title {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+}
+
+.footer .map .desc {
+    line-height: 18px;
+    padding: 0px 12px 0px 10px;
+    margin-top: 17px;
+    color: #666;
+}
+
+.footer .map .more {
+    text-align: right;
+}
+
+.footer .map .more a {
+    font-size: 12px;
+    line-height: 18px;
+    color: #666;
+}
+
+.footer .web-info {
+    text-align: center;
+    overflow: hidden;
+    /* 清除包含塌陷 */
+}
+
+.footer .web-info span {
+    margin: 0px 7px;
+    color: #c2c0a0;
+}
+
+.footer .web-info .other-links {
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+.footer .web-info .copy-right {
+    line-height: 30px;
+}
+
+.footer .web-info .web-icon {
+    margin-top: 15px;
+}
+
+.footer .web-info .web-icon a {
+    display: inline-block;
+    width: 103px;
+    height: 34px;
+    margin-right: 3px;
+}
+
+.footer .web-info a:hover {
+    color: #00ffff;
+}
+
+
+/* footer结束*/
+
+
+/*你是我这一生调不好的bhg*/

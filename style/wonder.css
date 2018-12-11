@@ -1,0 +1,1047 @@
+/* =========  common ============== */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+.color-blue {
+    color: #27ace5;
+    background-color: #27ace5;
+}
+
+.color-red {
+    color: #ff3161;
+    background-color:#ff3161; 
+}
+/* =========  header ============== */
+.bg-containner {
+   min-width: 1200px;
+   height: 580px;
+   background: url("../resource/wonder/bg.png") no-repeat; 
+   margin: 0 auto;
+}
+
+.bg-containner header {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .18);
+}
+
+.header-center {
+    position: relative;
+    padding: 0 20px;
+    margin: 0 auto;
+    min-width: 1202px;
+    max-width: 1400px;
+    height: 50px;
+    background-size: contain;
+}
+
+header a:hover {
+    color: #27ace5;
+}
+
+/* logo */
+.header-center .logo {
+    width: 155px;
+    height: 50px;
+    float: left;
+}
+
+.logo a {
+    display: block;
+    width: 155px;
+    height: 50px;
+    background: url("../resource/wonder/logo.png") no-repeat;
+    text-indent: -5211314px;
+    overflow: hidden;
+}
+
+/* 头部导航 */
+.header-center .menu-location {
+    float: left;
+    margin-left: 25px;
+    font-size: 0px;
+    height: inherit;
+}
+.menu-location .category:hover .categories{
+    height: 285px;
+}
+.menu-location .categories {
+    position: absolute;
+    margin-left: -120px;
+    padding-left: 10px;
+    width: 314px;
+    height: 0px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #999;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,.2);
+    cursor: default;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.menu-location .categories-title {
+    float: left;
+    width: 100%;
+    line-height: 30px;
+    font-size: 12px;
+    color: #000;
+    font-weight: 700;
+    cursor: default;
+}
+
+.menu-location .category-item {
+    position: relative;
+    float: left;
+    margin:  0 5px 5px 0;
+    padding: 0 6px;
+    width: 86px;
+    height: 24px;
+    background-color: #eee;
+    border-radius: 3px;
+    line-height: 24px;
+    text-align: center;
+    color: #666;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer
+}
+
+.menu-location .category-item:hover {
+    color: #27ace5
+}
+
+.menu-location .categories .all:hover {
+    background-color: #18a3de;
+}
+
+.menu-location .categories .all {
+    width: 304px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: #27ace5;
+    color: #fff;
+}
+
+.hot-game-nav:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 11px;
+    height: 11px;
+    background-image: url(../resource/wonder/hot-4afd9f091b.png)
+}
+
+.menu-location a.homepage,
+.menu-location a.live,
+.menu-location a.ent,
+.menu-location div.category {
+    float: left;
+    font-size: 18px;
+    line-height: 50px;
+    margin-left: 32px;
+    color: #3d3d3e;
+    cursor: pointer;
+}
+
+.menu-location a:hover {
+    color: #27ace5;
+}
+
+/* 视频 */
+.menu-location .vedio,
+.menu-location .vedio:hover {
+    float: left;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 58px;
+    height: 30px;
+    line-height: 30px;
+    background: #27ace5;
+    color: #fff;
+    border-radius: 2px;
+}
+
+/* 赛事 */
+.menu-location .compete {
+    float: left;
+    font-size: 18px;
+    line-height: 50px;
+    margin-left: 0;
+    cursor: pointer;
+}
+.menu-location .compete:hover .matches {
+    height: 90px;
+}
+
+.menu-location .compete .matches {
+    position: absolute;
+    margin-left: -120px;
+    padding-left: 10px;
+    width: 314px;
+    /* height: 90px; */
+    height: 0;
+    line-height: 30px;
+    font-size: 12px;
+    color: #999;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,.2);
+    cursor: default;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.menu-location .matches a {
+    display: block;
+    margin-top: 10px;
+     width: 304px;
+    line-height: 32px;
+    background-color: #eee;
+    color: #666;
+}
+.menu-location .matches a:hover {
+    color: #27ace5;
+}
+
+.menu-location .matches .more:hover {
+    background-color: #18a3de;
+}
+.menu-location .matches .more {
+    width: 304px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: #27ace5;
+    color: #fff;
+}
+
+/* user info */
+.header-center .userinfo {
+    float: right;
+    line-height: 50px;
+    font-size: 14px;
+}
+
+/* 搜索 */
+.userinfo .searchbar {
+    width: 180px;
+    height: 30px;
+    border: 1px solid #e7e7e7;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 11px;
+    margin-top: 11px;
+    float: left;
+}
+
+.searchbar #search {
+    float: left;
+    width: 120px;
+    height: 28px;
+    margin-left: 12px;
+}
+
+.searchbar button {
+    float: right;
+    font-size: 16px;
+    margin-right: 6px;
+    width: 28px;
+    height: 28px;
+    background: url('../resource/wonder/search-btn.png');
+}
+
+.userinfo a {
+    margin-left: 20px;
+    color: #737f8a;
+}
+
+.userinfo span {
+    color: #737f8a;
+    margin-left: 5px;
+    margin-right: -15px;
+}
+
+/* 开播 */
+.userinfo a.kb {
+    float: right;
+    width: 66px;
+    height: 30px;
+    border-radius: 12px;
+    background: #27ace5;
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+/* =========  main ============== */
+.bg-containner main {
+    height: 298px;
+    background-color: #1f2326;
+    margin-top: 230px;
+    border-radius: 3px 3px 0 0;
+    border-width: 4px 0 0 0;
+    border-style: solid;
+    border-color: #484b4d;
+}
+
+/* 黑色 */
+main .main-nav {
+    width: inherit;
+    height: 46px;
+    background: #3b3f41;
+}
+
+.main-nav ul,
+.main-nav li {
+    float: left;
+}
+
+.main-nav li {
+    width: 119px;
+    height: 46px;
+    margin-right: 1px;
+    background: #313537;
+    text-align: center;
+    line-height: 46px;
+    
+}
+
+.main-nav li a {
+    color: #ededed;
+    font-size: 16px;
+}
+
+.main-nav li.current a, 
+.main-nav li a:hover {
+    float: left;
+    width: 100px;
+    height: 30px;
+    border-radius: 12px;
+    background: #27ace5;
+    margin-left: 10px;
+    margin-top: 8px;
+    line-height: 30px;
+}
+
+
+.main-nav button {
+    float: left;
+    width: 119px;
+    height: 46px;
+    background: #464a4c;
+    font-size: 16px;
+}
+/* 进入论坛 */
+.main-nav button.club {
+    color: #eaebeb;
+    margin-right: 1px;
+    line-height: 46px;
+}
+.main-nav button.club a {
+    float: left;
+    width: 99px;
+    height: 30px;
+    line-height: 30px;
+    color: inherit;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.main-nav button.club a:hover {
+    border-radius: 12px;
+    background: #27ace5;
+}
+/* 领取礼包 */
+.main-nav button.gift {
+    color: #868889;
+}
+.main-nav button a {
+    color: inherit;
+}
+
+/* main-inner */
+main .main-inner {
+    height: 248px;
+}
+
+/* 轮播图 */
+.main-inner .banner {
+    float: left;
+    width: 380px;
+    height: 230px;
+    margin-left: 9px;
+    margin-top: 9px;
+    cursor: pointer;
+} 
+
+/* 游戏达人 */
+.main-inner .gameplay {
+    float: left;
+    width: 530px;
+    height: inherit;
+    /* background: red; */
+    margin-left: 20px;
+}
+.gameplay .title {
+    width: 134px;
+    height: 23px;
+    background-image: url('../resource/wonder/sprite-title.png');
+    background-position: -400px -85px;
+    float: left;
+    margin-top: 9px;
+}
+.gameplay .titleFlag-l,
+.gameplay .titleFlag-r {
+    width: 193px;
+    height: 23px;
+    display: block;
+    background-image: url('../resource/wonder/sprite-title.png');
+    background-position: -1062px -50px;
+    margin-top: 10px;
+    float: left;
+}
+
+.gameplay .gameplay-item {
+    float: left;
+    width: 170px;
+    height: 94px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background:#1c2122;
+    cursor: pointer;
+}
+
+.gameplay .gameplay-item img.avatar {
+    width: 94px;
+    height: 94px;
+    float: left;
+}
+
+.gameplay .gameplay-item .desc {
+    width: 76px;
+    height: 94px;
+    float: left;
+    padding-left: 8px;
+    padding-top: 1px;
+    box-sizing: border-box;
+}
+
+.gameplay .gameplay-item .desc .player {
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+.gameplay-item .desc .player,
+.gameplay-item .desc .playnum,
+.gameplay-item .desc .zan {
+    font-size: 12px;
+    line-height: 31px;
+    height: 31px;
+    color: #939393;
+    display: block;
+    cursor: default;
+}
+
+.gameplay .gameplay-item .desc .playnum i {
+    float: left;
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    background: url('../resource/wonder/sprite-base.png');
+    background-position: -230px -50px;
+}
+.gameplay .gameplay-item .desc .zan i {
+    float: left;
+    width: 13px;
+    height: 12px;
+    line-height: 12px;
+    background-color: pink;
+    background: url('../style/common/sprite-base1.png');
+    background-position: -230px -64px;
+}
+
+.gameplay .gameplay-item .desc span {
+    float: left;
+    font-size: 12px;
+    height: 12px;
+    line-height: 12px;
+    margin-left: 6px;
+}
+.ml0 {
+    margin-left: 0!important;
+}
+/* 热门搜索 */
+.main-inner .hot-search {
+    float: left;
+    width: 261px;
+    height: inherit;
+    background: #282b2c;
+}
+
+.hot-search .title {
+    margin-top: 9px;
+    margin-left: 20px;
+    height: 16px;
+}
+
+.hot-search .title .title-line {
+    float: left;
+    width: 3px;
+    height: 15px;
+}
+
+.hot-search .title .title-name {
+    float: left;
+    font-size: 16px;
+    height: 16px;
+    line-height: 16px;
+    margin-left: 9px;
+    background-color: inherit;
+}
+.hot-search .searchbar {
+    width: 232px;
+    height: 32px;
+    background:url('../resource/wonder/sprite-title.png');
+    background-position: -296px -52px;
+    margin-top: 9px;
+    margin-left: 20px;
+}
+.hot-search .searchbar input#search {
+    float: left;
+    width: 190px;
+    height: 28px;
+    margin-top: 2px;
+    margin-left: 15px;
+}
+.hot-search .searchbar a.search {
+    float: right;
+    width: 16px;
+    height: 16px;
+    background:url('../resource/wonder/sprite-title.png');
+    background-position: -581px -86px;
+    margin-top: 8px;
+    margin-right: 10px;
+}
+
+.hot-search .hots-container {
+     margin-left: 20px;
+     margin-top: 9px;
+}
+
+.hot-search .hots-container  button {
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 25px;
+    border: 1px solid #3e4142;
+    color:  #8b8c8c;
+    background-color: #282b2c;
+    margin-right: 10px;
+    margin-bottom: 11px;
+    border-radius: 2px;
+}
+
+/* =========  公共 content  ====== */
+.content {
+    height: 435px;
+    background: #f6f6f6;
+}
+.content .content-l {
+    float: left;
+    width: 896px;
+    height: inherit;
+    /* background: tomato;  */
+}
+.content .content-r {
+    float: right;
+    width: 294px;
+    height: inherit;
+    /* background: yellowgreen;  */
+}
+
+.content .title {
+    margin-top: 30px;
+    height: 24px;
+}
+
+.content .title .title-line {
+    float: left;
+    width: 3px;
+    height: 24px;
+}
+.content .title .title-bg{
+    float: left;
+    margin-left: 9px;
+    background-image: url('../resource/wonder/sprite-title.png');
+}
+
+.content .title .title-change,
+.content .title a.title-more {
+    float: right;
+    color: #6e6e6e;
+    margin-right: 50px;
+    cursor: pointer;
+}
+/* 换一换 */
+.title-change i#title-change {
+    float: left;
+    width: 19px;
+    height: 16px;
+    background: url('../resource/wonder/sprite-base.png');
+    background-position: -231px -17px;
+}
+
+.title-change span {
+    float: left;
+    margin-left: 7px;
+}
+
+.vedio-container {
+    position: relative;
+    left: -25px;
+    /* top: 10px; */
+}
+
+.vedio-item {
+    float: left;
+    margin-top: 20px;
+    margin-right: 20px;
+    position: absolute;
+    width: 204px;
+    height: 170px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.img-wrap{
+    overflow: hidden;
+    perspective: 800px;
+    position: relative;
+}
+
+.img-wrap:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(36deg, #272b66 42.34%, transparent 42.34%) 0 0,
+    linear-gradient(72deg, #2d559f 75.48%, transparent 75.48%) 0 0,
+    linear-gradient(-36deg, #9ac147 42.34%, transparent 42.34%) 100% 0,
+    linear-gradient(-72deg, #639b47 75.48%, transparent 75.48%) 100% 0,
+    linear-gradient(36deg, transparent 57.66%, #e1e23b 57.66%) 100% 100%,
+    linear-gradient(72deg, transparent 24.52%, #f7941e 24.52%) 100% 100%,
+    linear-gradient(-36deg, transparent 57.66%, #662a6c 57.66%) 0 100%,
+    linear-gradient(-72deg, transparent 24.52%, #9a1d34 24.52%) 0 100%,
+    #43a1cd linear-gradient(#ba3e2e, #ba3e2e) 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    transform: translateX(-50%) translateY(-50%) scale(0) rotate(360deg);
+    transition: all 0.3s ease 0s;
+}
+
+.img-wrap:hover:before{
+    opacity: 0.5;
+    transform: translateX(-50%) translateY(-50%) scale(1.5) rotate(0);
+}
+
+.img-wrap:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(255,255,255,0.9),transparent,transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.vedio-box {
+    padding-bottom: 10px;
+}
+
+.img-wrap:hover:after{ opacity: 1; }
+
+.img-wrap img{
+    width: 100%;
+    height: auto;
+}
+
+.vedio-item .img-wrap img.content {
+    width: 204px;
+    height: 110px;
+}
+.vedio-item .title {
+    font-size: 14px;
+    height: 14px;
+    line-height: 14px;
+    color: #4b4b4b;
+    margin-top: 9px;
+    margin-bottom: 13px;
+}
+.vedio-item .desc {
+    color: #a7a7a7;
+    font-size: 14px;
+}
+
+.vedio-item .desc a {
+    color: inherit;
+}
+
+.vedio-item:hover {
+    box-shadow: 0px 0px 10px #232323;
+}
+
+.vedio-item:hover .title {
+    color: #27ace5;
+}
+
+.vedio-item .desc img.icon {
+    float: left;
+    width: 22px;
+    height: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.vedio-item .desc .upmaster {
+    float: left;
+    height: 22px;
+    line-height: 22px;
+}
+.vedio-item .desc .playcount {
+    float: right;
+    height: 22px;
+    line-height: 22px;
+    margin-right: 9px;
+}
+
+
+
+.vedio-item .desc .playcount i {
+    float: left;
+    width: 12px;
+    height: 12px;
+    color: #a7a7a7;
+    background: url('../resource/wonder/sprite-base.png');
+    background-position: -230px -50px;
+    margin-top: 5px;
+}
+
+.vedio-item .desc .playcount span {
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+
+
+.content-r ul {
+    margin-left: 10px;
+}
+
+.content-r li {
+    width: 274px;
+    margin-bottom: 22px;
+}
+.content-r li a {
+    display: block;
+    width: inherit;
+    height: 15px;
+    color: #474747;
+}
+.content-r li:hover a {
+    color: #27ace5;
+}
+.content-r li a b {
+    float: left;
+    width: 18px;
+    height: 15px;
+    background-color: #999;
+    color: #fafafa;
+    font-size: 14px;
+    line-height: 15px;
+    margin-right: 6px;
+    text-align: center;
+}
+
+.content-r li a span {
+    float: left;
+    margin-top: 1px;
+    width: 247px;
+}
+/* 动态广场 */
+.title-bg.title-bg-dtgc {
+    width: 100px;
+    height: 23px;
+    background-position: -398px -119px;
+}
+/* 热播 TOP 排行榜 */
+.title-bg.title-bg-rbtop {
+    width: 181px;
+    height: 23px;
+    background-position: -530px -53px;
+}
+.rbtop-container {
+    width: 294px;
+    height: 360px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+.rbtop-container .rbtop-tabs {
+    width: 294px;
+    height: 28px;
+    background-color: #e2e2e2;
+}
+.rbtop-container .rbtop-content {
+    width: 294px;
+    height: 332px;
+    margin-top: 15px;
+}
+
+.rbtop-container .rbtop-content .rank {
+    width: 271px;
+    height: 67px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    /* position: relative; */
+}
+
+.rbtop-container .rbtop-content .rank:hover .rank-title {
+    color: #27ace5;
+}
+.rank img {
+    width: 118px;
+    height: 67px;
+    margin-left: 10px;
+    float: left;
+}
+.rank a.rank-title {
+    float: left;
+    color: #333;
+    font-size: 12px;
+    line-height: 22px;
+    height: 22px;
+    width: 130px;
+    margin-left: 8px;
+}
+.rank .playnum {
+    float: left;
+    color: #b0b0b0;
+    font-size: 12px;
+    line-height: 12px;
+    height: 12px;
+    width: 130px;
+    margin-left: 8px;
+    margin-top: 25px;
+}
+.rank .playnum i {
+    float: left;
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    background: url('../resource/wonder/sprite-base.png');
+    background-position: -230px -50px; 
+}
+
+.rank .playnum span {
+    float: left;
+    margin-left: 3px;
+}
+/* 精品栏目 */
+.title-bg.title-bg-jplm {
+    /* 娱乐集锦 */
+    width: 101px;
+    height: 23px;
+    background-position: -296px -120px;
+}
+/* 最新游戏资讯栏 */
+.title-bg.title-bg-zxyxzxl {
+    width: 173px;
+    height: 23px;
+    background-position: -713px -54px;
+}
+.zxl-content {
+    position: relative;
+    height:360px;
+    width: 294px;
+    background-color: #fff;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.zxl-content .zxl-item {
+    width: 274px;
+    height: 56px;
+    margin-left: 10px;
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.zxl-content .zxl-item img {
+    float: left;
+    width: 118px;
+    height: 56px;
+}
+
+.zxl-content .zxl-item .zxltitle {
+    float: left;
+    width: 156px;
+    height: 56px;
+    background-color: #f3f3f3;
+    color: #5d5d5d;
+    font-size: 14px;
+    line-height: 14px;
+    padding-top: 11px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+.zxl-content .zxl-item:hover .zxltitle {
+    color: #27ace5;
+}
+
+.zxl-content ul {
+    margin-top: 20px;
+}
+
+/* 英雄攻略 */
+.title-bg.title-bg-yxgl {
+    /* 娱乐集锦 */
+    width: 47px;
+    height: 23px;
+    background-position: -297px -146px;
+}
+
+
+
+/* =========  footer ============== */
+footer {
+    background: #1d1d1d;
+    min-width: 1200px;
+    height: 366px;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+
+footer .footer-inner {
+    height: 298px;
+    /* background: pink; */
+}
+
+.footer-l {
+    float: left;
+    width: 422px;
+    height: 298px;
+}
+.footer-m {
+    float: left;
+    width: 154px;
+    height: 298px;
+    padding-left: 40px;
+    border-left: 1px solid #212121;
+    border-right: 1px solid #212121;
+}
+.footer-r {
+    float: left;
+    width: 300px;
+    height: 298px;
+    margin-left: 50px;
+}
+
+footer .title {
+    font-size: 18px;
+    line-height: 18px;
+    color: #e4e4e4;
+    margin-top: 41px;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: #767676;
+    font-size: 14px;
+    margin-right: 33px;
+}
+
+
+.footer-l .footer-l-item {
+    width: 160px;
+    margin-right: 50px;
+}
+
+.footer-l-item img.qrcode {
+    width: 160px;
+    height: 160px;
+}
+
+.footer-m dl dd {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 24px;
+}
+
+footer a:hover {
+    color: #27ace5;
+}
+
+
+/* =========  copyright ============== */
+.copyright {
+    background: #1d1d1d;
+    height: 160px;
+    border-top: 1px solid #232323;
+}
+
+.copyright .wen {
+    float: left;
+    width: 48px;
+    height: 48px;
+    background: url('../resource/wonder/e_wen.png') no-repeat;
+    background-size: cover;
+    margin-top: 40px;
+    margin-left: 400px;
+    /* background: green; */
+}
+
+.copyright .copyright-content {
+    float: left;
+    margin-top: 37px;
+    margin-left: 24px;
+    /* background-color: red; */
+}
+.copyright p,
+.copyright a {
+    color: #767676;
+    font-size: 14px;
+    line-height: 20px;
+}
+.copyright span {
+    margin-left: 5px;
+    margin-right: 2px;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+}
+
+
+

@@ -1,0 +1,195 @@
+/* 
+                                 _oo8oo_
+                                o8888888o
+                                88" . "88
+                                (| -_- |)
+                                0\  =  /0
+                              ___/'==='\___
+                            .' \\|     |// '.
+                           / \\|||  :  |||// \
+                          / _||||| -:- |||||_ \
+                         |   | \\\  -  /// |   |
+                         | \_|  ''\---/''  |_/ |
+                         \  .-\__  '-'  __/-.  /
+                       ___'. .'  /--.--\  '. .'___
+                    ."" '<  '.___\_<|>_/___.'  >' "".
+                   | | :  `- \`.:`\ _ /`:.`/ -`  : | |
+                   \  \ `-.   \_ __\ /__ _/   .-` /  /
+               =====`-.____`.___ \_____/ ___.`____.-`=====
+                             佛祖保佑，永无 bug
+*/
+
+/*
+ * @Author: 杜翕之
+ * @Date:   2018-9-6 09:36:01
+ * @Last Modified by:  杜翕之 
+ * @Last Modified time: 2018-10-23 20:23:01
+ */ 
+
+/* CSS reset */
+
+/* 清除默认样式 */
+body,
+span,
+div,
+a,
+b,
+i,
+s,
+p,
+u,
+strong,
+em,
+ins,
+del,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+form,
+fieldset,
+legend,
+textarea,
+ul,
+ol,
+li,
+dd,
+dl,
+dt,
+th,
+td,
+pre {
+    padding: 0;
+    margin: 0;
+}
+
+a,s,u {
+    text-decoration: none;
+}
+
+b,strong,
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+
+i,em {
+    font-style: normal;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+article,
+aside,
+b_nav,
+dialog,
+figure,
+footer,
+header,
+menu,
+section {
+    display: block;
+}
+
+/* 控件 */
+input {
+    -webkit-appearance: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+input, button {
+    border: 0 none;
+    outline: 0 none;
+}
+
+/* 表单 */
+legend {
+    display: none;
+}
+
+fieldset,
+iframe {
+    border: 0 none;
+}
+
+/* 表格 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+/* 清除浮动 */
+.clearfix::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+/* 定位 */
+.fl {
+    float: left;
+    _display: inline;
+}
+
+.fr {
+    float: right;
+    _display: inline;
+}
+
+/* 文字排版 */
+.f12 {
+    font-size: 12px;
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+.f16 {
+    font-size: 16px;
+}
+
+.f18 {
+    font-size: 18px;
+}
+
+.f20 {
+    font-size: 20px;
+}
+
+.f22 {
+    font-size: 22px;
+}
+
+.f24 {
+    font-size: 24px;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+/* body */
+body {
+    font: 12px/100% "Microsoft YaHei","sans-serif";
+}

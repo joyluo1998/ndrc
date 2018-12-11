@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>直播</title>
+    <link rel="stylesheet" href="../style/common/base.css">
+    <link rel="stylesheet" href="../style/live.css">
+    <link rel="stylesheet" href="../style/common/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/common/hover-min.css">
+    <script src="../script/common/jquery-1.12.4.min.js"></script>
+    <script src="../script/live.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-center">
+            <!-- logo -->
+            <div class="logo">
+                <h1><a href="https://cc.163.com/">非人学园视频专区</a></h1>
+            </div>
+            <!-- 头部导航 -->
+            <div class="menu-location">
+                <!-- 首页 -->
+                <a href="../page/index.html" class="homepage">首页</a>
+                <!-- 直播 -->
+                <a href="../page/live.html" class="live">直播</a>
+                <!-- 分类 -->
+                <div class="category hvr-icon-hang">
+                    <span>分类</span>
+                    <!-- <i class="iconfont icon-jiantou-copy-copy hvr-icon"></i> -->
+                    <i class="fa fa-chevron-down hvr-icon"></i>
+                    <div class="categories">
+                        <span class="categories-title">热门直播分类</span>
+                        <a class="category-item  hot-game-nav " href="javascript:" title="逆水寒">
+                            逆水寒
+                        </a>
+                        <a class="category-item  hot-game-nav " href="javascript:" title="流星蝴蝶剑">
+                            流星蝴蝶剑
+                        </a>
+                        <a class="category-item  hot-game-nav " href="javascript:" title="非人学园">
+                            非人学园
+                        </a>
+                        <a class="category-item  hot-game-nav " href="javascript:" title="荒野行动">
+                            荒野行动
+                        </a>
+                        <a class="category-item  hot-game-nav " href="javascript:" title="第五人格">
+                            第五人格
+                        </a>
+                        <a class="category-item  hot-game-nav " href="javascript:" title="终结者2：审判日">
+                            终结者2：审判日
+                        </a>
+                        <a class="category-item " href="javascript:" title="梦幻西游电脑版">
+                            梦幻西游电脑版
+                        </a>
+                        <a class="category-item " href="javascript:" title="阴阳师">
+                            阴阳师
+                        </a>
+                        <a class="category-item  hot-game-nav " href="javascript:" title="神都夜行录">
+                            神都夜行录
+                        </a>
+                        <a class="category-item " href="javascript:" title="守望先锋">
+                            守望先锋
+                        </a>
+                        <a class="category-item " href="javascript:" title="我的世界">
+                            我的世界
+                        </a>
+                        <a class="category-item  hot-game-nav " href="javascript:" title="荒野行动PC版">
+                            荒野行动PC版
+                        </a>
+                        <a class="category-item " href="javascript:" title="炉石传说">
+                            炉石传说
+                        </a>
+                        <a class="category-item  hot-game-nav " href="/javascript:">
+                            主机单机
+                        </a>
+                        <a class="category-item " href="javascript:" title="梦幻西游手游">
+                            梦幻西游手游
+                        </a>
+                        <a class="category-item  hot-game-nav " href="javascript:">
+                            楚留香
+                        </a>
+                        <a class="category-item " href="javascript:" title="倩女幽魂手游">
+                            倩女幽魂手游
+                        </a>
+                        <a class="category-item " href="javascript:" title="大话西游手游">
+                            大话西游手游
+                        </a>
+                        <a class="category-item " href="javascript:" title="大话西游2经典版">
+                            大话西游2经典版
+                        </a>
+                        <a class="category-item " href="javascript:" title="决战！平安京">
+                            决战！平安京
+                        </a>
+                        <a class="category-item " href="javascript:" title="荒野行动PLUS">
+                            荒野行动PLUS
+                        </a>
+                        <button class="all">全部直播</button>
+                    </div>
+                </div>
+                <!-- 娱乐 -->
+                <a href="https://cc.163.com/ent/" class="ent">娱乐</a>
+                <!-- 视频 -->
+                <a href="http://cc.163.com/v/" class="vedio">视频</a>
+                <!-- 赛事 -->
+                <div class="compete hvr-icon-spin">
+                    <span>赛事</span>
+                    <!-- <i class="iconfont icon-jiantou-copy-copy hvr-icon"></i> -->
+                    <i class="fa fa-chevron-down hvr-icon" style="font-weight: normal"></i>
+                    <div class="matches">
+                        <a href="javascript:">
+                            <img src="../resource/live/5b84ee1696dee41d067c2396Qd74SbEc.png" width="50" height="32">
+                            <span class="name">网易电竞X系列赛</span>
+                        </a>
+                        <button class="more">更多赛事</button>
+                    </div>
+                </div>
+            </div>
+            <!-- user info -->
+            <div class="userinfo">
+                <!-- 搜索 -->
+                <div class="searchbar">
+                    <input type="search" name="search" id="search" placeholder="搜房间/主播/视频">
+                    <button>
+                    </button>
+                </div>
+                <!-- 登录 -->
+                <a href="javascript:;">
+                    <i class="iconfont icon-yonghu"></i>
+                    登录</a><span>|</span>
+                <!-- 注册 -->
+                <a href="javascript:;">注册</a>
+                <!-- 历史 -->
+                <a href="javascript:;">
+                    <i class="iconfont icon-history"></i>
+                    历史</a>
+                <!-- 下载 -->
+                <a href="javascript:;">
+                    <i class="iconfont icon-Group-"></i>
+                    下载</a>
+                <!-- 开播 -->
+                <a href="javascript:;" class="kb">开播</a>
+            </div>
+        </div>
+    </header>
+    <div class="sideBar" id="sideBar">
+        <div class="sideBar-nav" id="sideBar-nav">
+            <a href="javascript:">
+                <em class="icon-side-nav icon-side-nav-live"></em>
+                <br>
+                <span>直播</span>
+            </a>
+            <a href="javascript:">
+                <em class="icon-side-nav icon-side-nav-type"></em>
+                <br>
+                <span>分类</span>
+            </a>
+            <a href="javascript:">
+                <em class="icon-side-nav icon-side-nav-entertainment"></em>
+                <br>
+                <span>娱乐</span>
+            </a>
+            <a href="javascript:">
+                <em class="icon-side-nav icon-side-nav-rank"></em>
+                <br>
+                <span>排行榜</span>
+            </a>
+            <a href="javascript:">
+                <em class="icon-side-nav icon-side-nav-follow"></em>
+                <br>
+                <span>关注</span>
+            </a>
+            <a class="sideBar-link" href="javascript:">客服</a>
+        </div>
+        <div class="side-nav-wrapper" id="side-nav-extend">
+            <div class="side-nav-extend">
+                <div class="side-nav-title side-nav-title-just-title">
+                    <a href="javascript:">
+                        <img class="side-nav-title-icon" src="../resource/live/5ad01ea996dee44056cfba4aQIhiFs6s.png">
+                        <span>全部直播</span>
+                    </a>
+                </div>
+                <div class="side-nav-title side-nav-title-just-title">
+                    <a href="javascript:">
+                        <img class="side-nav-title-icon" src="../resource/live/5ad7225d7f9d2a482caf23faYkTmiTfM.png">
+                        <span>全站排行</span>
+                    </a>
+                </div>
+                <div class="side-nav-title side-nav-title-just-title">
+                    <a href="javascript:">
+                        <img class="side-nav-title-icon" src="../resource/live/5ad01dab6f0494176611c5823RBMsz9E.png">
+                        <span>主播招募</span>
+                    </a>
+                </div>
+                <div class="side-nav-tab">
+                    <ul>
+                        <li class="side-nav-tab-1 current">推荐</li>
+                        <li class="side-nav-tab-2">我的</li>
+                    </ul>
+                </div>
+                <div class="side-nav-title side-nav-h">
+                    <a href="javascript:">
+                        <img class="side-nav-title-icon" src="../resource/live/5ad01ef18b7427cc998ef7ber053XG5k.png">
+                        <span>手游</span>
+                    </a>
+                </div>
+                <div class="side-nav-tag-list side-nav-h clearfix">
+                    <ul>
+                        <li class="side-nav-tag-item   hot-game-nav">
+                            <a href="javascript:">
+                                流星蝴蝶剑
+                            </a>
+                        </li>
+                        <li class="side-nav-tag-item   hot-game-nav ">
+                            <a href="javascript:">
+                                荒野行动
+                            </a>
+                        </li>
+                        <li class="side-nav-tag-item   hot-game-nav ">
+                            <a href="javascript:">
+                                第五人格
+                            </a>
+                        </li>
+                        <li class="side-nav-tag-item   hot-game-nav ">
+                            <a href="javascript:">
+                                终结者2
+                            </a>
+                        </li>
+                        <li class="side-nav-tag-item  ">
+                            <a href="javascript:">
+                                非人学园
+                            </a>
+                        </li>
+                        <li class="side-nav-tag-item  ">
+                            <a href="javascript:">
+                                阴阳师
+                            </a>
+                        </li>
+                        <li class="side-nav-tag-item  ">
+                            <a href="javascript:">
+                                梦幻西游手游
+                            </a>
+                        </li>
+                        <li class="side-nav-tag-item  ">
+                            <a href="javascript:">
+                                大话西游手游
+                            </a>
+                        </li>
+                        <li class="side-nav-tag-item  ">
+                            <a href="javascript:">
+                                倩女幽魂手游
+                            </a>
+                        </li>
+                        <li class="side-nav-tag-item  ">
+                            <a href="javascript:">
+                                楚留香
+                            </a>
+                        </li>
+                        <li class="side-nav-tag-item  ">
+                            <a href="javascript:">
+                                决战！平安京
+                            </a>
+                        </li>
+                        <li class="side-nav-tag-item  hot-game-nav ">
+                            <a href="javascript:">
+                                神都夜行录
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="side-nav-title side-nav-h side-nav-title-margin-top-small ">
+                    <a href="javascript:">
+                        <img class="side-nav-title-icon" src="../resource/live/5ad01ee4143cfa546382b5aaXCh5OF1K.png">
+                        <span>端游</span>
+                    </a>
+                </div>
+                <div class="side-nav-tag-list side-nav-h clearfix">
+                    <ul>
+                        <li class="side-nav-tag-item   hot-game-nav ">
+                            <a href="javascript:">
+                                逆水寒
+                            </a>
+                        </li>
+                        <li class="side-nav-tag-item   hot-game-nav ">
+                            <a href="javascript:">
+                                荒野行动PLUS
+                            </a>
+                        </li>
+                        <li class="side-nav-tag-item  ">
+                            <a href="javascript:">
+                                梦幻西游电脑版
+                            </a>
+                        </li>
+                        <li class="side-nav-tag-item  ">
+                            <a href="javascript:">
+                                大话西游2经典版
+                            </a>
+                        </li>
+                        <li class="side-nav-tag-item  ">
+                            <a href="javascript:">
+                                守望先锋
+                            </a>
+                        </li>
+                        <li class="side-nav-tag-item  ">
+                            <a href="javascript:">
+                                炉石传说
+                            </a>
+                        </li>
+                        <li class="side-nav-tag-item  ">
+                            <a href="javascript:">
+                                我的世界
+                            </a>
+                        </li>
+                        <li class="side-nav-tag-item  ">
+                            <a href="javascript:">
+                                荒野行动PC版
+                            </a>
+                        </li>
+                        <li class="side-nav-tag-item  ">
+                            <a href="javascript:">
+                                主机单机
+                            </a>
+                        </li>
+                        <li class="side-nav-tag-item  ">
+                            <a href="javascript:">
+                                天下3
+                            </a>
+                        </li>
+                        <li class="side-nav-tag-item  ">
+                            <a href="javascript:">
+                                终结者2PC版
+                            </a>
+                        </li>
+                        <li class="side-nav-tag-item  ">
+                            <a href="javascript:">
+                                绝地求生
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="side-nav-title side-nav-h side-nav-title-margin-top-small ">
+                    <a href="javascript:">
+                        <img class="side-nav-title-icon" src="../resource/live/5ad01f077f9d2a4639bc17d8MbcO7dTi.png">
+                        <span>娱乐</span>
+                    </a>
+                </div>
+                <div class="side-nav-tag-list side-nav-h clearfix">
+                    <ul>
+                        <li class="side-nav-tag-item  ">
+                            <a href="javascript:">
+                                颜值
+                            </a>
+                        </li>
+                        <li class="side-nav-tag-item  ">
+                            <a href="javascript:">
+                                户外
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="side-nav-activity">
+                    <a href="javascript:">
+                        <img src="../resource/live/5bc409d1143cfa34b47ae8f0k3klKNTi.jpg">
+                    </a>
+                </div>
+                <div class="side-nav-activity">
+                    <a href="javascript:">
+                        <img src="../resource/live/5bd3cc6796dee42f4a7eb8d3PR6bgAKa.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="side-nav-tab-content " style="display:none;">
+                <div class="my-login">
+                    <a href="javascript:;">
+                        <span>请先登录</span>
+                    </a>
+                </div>
+            </div>
+            <div class="side-nav-bottom-partition"></div>
+            <div class="side-nav-bottom">
+                <div class="side-nav-download clearfix">
+                    <a href="javascript:">
+                        <em class="icon-side-nav icon-side-nav-pc-download"></em>
+                        <span>PC端下载</span>
+                    </a>
+                    <a href="javascript:">
+                        <em class="icon-side-nav icon-side-nav-app-download"></em>
+                        <span>APP下载</span>
+                    </a>
+                </div>
+                <div class="side-nav-link">
+                    <a href="javascript:">
+                        签约
+                    </a>
+                    <em></em>
+                    <a href="javascript:">
+                        论坛
+                    </a>
+                    <em></em>
+                    <a href="javascript:">
+                        客服
+                    </a>
+                    <em></em>
+                    <a href="javascript:">
+                        12318
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebtn" id="sideBtn"></div>
+    </div>
+    <div class="main">
+        <div class="banner">
+            <ul class="viewport">
+                <li style="display: block" class="bg"><a href="javascript:"><img src="../resource/live/5b3d8bf95e6027fb31d32b71GI1DyKML.jpg"
+                            alt=""></a></li>
+                <li class="bg"><a href="javascript:"><img src="../resource/live/5bc9940d8b7427fdda0dce4dfbo7Gjvp.jpg"
+                            alt=""></a></li>
+                <li class="bg"><a href="javascript:"><img src="../resource/live/5b3d8ce4143cfa4e97a0b6b2CNdc74Bw.jpg"
+                            alt=""></a></li>
+                <li class="bg"><a href="javascript:"><img src="../resource/live/5b3d8cc35e602719b53c0e6fyslMfs1I.jpg"
+                            alt=""></a></li>
+            </ul>
+            <ul class="dots clearfix">
+                <li class="dot on"><img src="../resource/live/5b3d8bf95e602719b53c0db02PCtpruh.jpg" alt=""><i></i></li>
+                <li class="dot"><img src="../resource/live/5bc9940d96dee4168fcea7c51FabY49F.jpg" alt=""><i></i></li>
+                <li class="dot"><img src="../resource/live/5b3d8ce46f049483d5610770IP1TClxd.jpg" alt=""><i></i><</li>
+                <li class="dot"><img src="../resource/live/5b3d8cc36f049483d561074f7iktwttU.jpg" alt=""><i></i></li>
+            </ul>
+        </div>
+
+        <div class="classification">
+            <p class="title">非人学园</p>
+            <nav>
+                <a data="all" class="current" href="javascript:;">全部直播</a>
+                <a data="cssn" href="javascript:;">传说骚年</a>
+                <a data="xbsj" href="javascript:;">校巴司机</a>
+                <a data="mhsj" href="javascript:;">马猴烧酒</a>
+                <a data="wydc" href="javascript:;">学园大触</a>
+                <a data="jpjs" href="javascript:;">金牌讲师</a>
+                <a data="xxzb" href="javascript:;">新秀主播</a>
+            </nav>
+        </div>
+
+        <ul class="live-list">
+            <li class="live-list-item">
+                <div class="container"><i class="mask"></i><img src="../resource/live/5bd510db7f9d2a22d48cfe26fIvsPRJP.jpg"
+                        alt="">
+                    <p><span class="title ellipsis">继续肝啊~</span><span class="owner"><img src="../resource/live/5b3a3efc7f9d2ad720fb1e4bpONimjXj.jpg">CC-易燃</span><span
+                            class="popularity"> 3.1万</span></p>
+                </div>
+            </li>
+            <li class="live-list-item">
+                <div class="container"><i class="mask"></i><img src="../resource/live/5bd510db7f9d2a22d48cfe26fIvsPRJP.jpg"
+                        alt="">
+                    <p><span class="title ellipsis">继续肝啊~</span><span class="owner"><img src="../resource/live/5b3a3efc7f9d2ad720fb1e4bpONimjXj.jpg">CC-易燃</span><span
+                            class="popularity"> 3.1万</span></p>
+                </div>
+            </li>
+            <li class="live-list-item">
+                <div class="container"><i class="mask"></i><img src="../resource/live/5bd510db7f9d2a22d48cfe26fIvsPRJP.jpg"
+                        alt="">
+                    <p><span class="title ellipsis">继续肝啊~</span><span class="owner"><img src="../resource/live/5b3a3efc7f9d2ad720fb1e4bpONimjXj.jpg">CC-易燃</span><span
+                            class="popularity"> 3.1万</span></p>
+                </div>
+            </li>
+            <li class="live-list-item">
+                <div class="container"><i class="mask"></i><img src="../resource/live/5bd510db7f9d2a22d48cfe26fIvsPRJP.jpg"
+                        alt="">
+                    <p><span class="title ellipsis">继续肝啊~</span><span class="owner"><img src="../resource/live/5b3a3efc7f9d2ad720fb1e4bpONimjXj.jpg">CC-易燃</span><span
+                            class="popularity"> 3.1万</span></p>
+                </div>
+            </li>
+            <li class="live-list-item">
+                <div class="container"><i class="mask"></i><img src="../resource/live/5bd510db7f9d2a22d48cfe26fIvsPRJP.jpg"
+                        alt="">
+                    <p><span class="title ellipsis">继续肝啊~</span><span class="owner"><img src="../resource/live/5b3a3efc7f9d2ad720fb1e4bpONimjXj.jpg">CC-易燃</span><span
+                            class="popularity"> 3.1万</span></p>
+                </div>
+            </li>
+            <li class="live-list-item">
+                <div class="container"><i class="mask"></i><img src="../resource/live/5bd510db7f9d2a22d48cfe26fIvsPRJP.jpg"
+                        alt="">
+                    <p><span class="title ellipsis">继续肝啊~</span><span class="owner"><img src="../resource/live/5b3a3efc7f9d2ad720fb1e4bpONimjXj.jpg">CC-易燃</span><span
+                            class="popularity"> 3.1万</span></p>
+                </div>
+            </li>
+            <li class="live-list-item">
+                <div class="container"><i class="mask"></i><img src="../resource/live/5bd510db7f9d2a22d48cfe26fIvsPRJP.jpg"
+                        alt="">
+                    <p><span class="title ellipsis">继续肝啊~</span><span class="owner"><img src="../resource/live/5b3a3efc7f9d2ad720fb1e4bpONimjXj.jpg">CC-易燃</span><span
+                            class="popularity"> 3.1万</span></p>
+                </div>
+            </li>
+            <li class="live-list-item">
+                <div class="container"><i class="mask"></i><img src="../resource/live/5bd510db7f9d2a22d48cfe26fIvsPRJP.jpg"
+                        alt="">
+                    <p><span class="title ellipsis">继续肝啊~</span><span class="owner"><img src="../resource/live/5b3a3efc7f9d2ad720fb1e4bpONimjXj.jpg">CC-易燃</span><span
+                            class="popularity"> 3.1万</span></p>
+                </div>
+            </li>
+            <li class="live-list-item">
+                <div class="container"><i class="mask"></i><img src="../resource/live/5bd510db7f9d2a22d48cfe26fIvsPRJP.jpg"
+                        alt="">
+                    <p><span class="title ellipsis">继续肝啊~</span><span class="owner"><img src="../resource/live/5b3a3efc7f9d2ad720fb1e4bpONimjXj.jpg">CC-易燃</span><span
+                            class="popularity"> 3.1万</span></p>
+                </div>
+            </li>
+            <li class="live-list-item">
+                <div class="container"><i class="mask"></i><img src="../resource/live/5bd510db7f9d2a22d48cfe26fIvsPRJP.jpg"
+                        alt="">
+                    <p><span class="title ellipsis">继续肝啊~</span><span class="owner"><img src="../resource/live/5b3a3efc7f9d2ad720fb1e4bpONimjXj.jpg">CC-易燃</span><span
+                            class="popularity"> 3.1万</span></p>
+                </div>
+            </li>
+            <li class="live-list-item">
+                <div class="container"><i class="mask"></i><img src="../resource/live/5bd510db7f9d2a22d48cfe26fIvsPRJP.jpg"
+                        alt="">
+                    <p><span class="title ellipsis">继续肝啊~</span><span class="owner"><img src="../resource/live/5b3a3efc7f9d2ad720fb1e4bpONimjXj.jpg">CC-易燃</span><span
+                            class="popularity"> 3.1万</span></p>
+                </div>
+            </li>
+            <li class="live-list-item">
+                <div class="container"><i class="mask"></i><img src="../resource/live/5bd510db7f9d2a22d48cfe26fIvsPRJP.jpg"
+                        alt="">
+                    <p><span class="title ellipsis">继续肝啊~</span><span class="owner"><img src="../resource/live/5b3a3efc7f9d2ad720fb1e4bpONimjXj.jpg">CC-易燃</span><span
+                            class="popularity"> 3.1万</span></p>
+                </div>
+            </li>
+            <li class="live-list-item">
+                <div class="container"><i class="mask"></i><img src="../resource/live/5bd510db7f9d2a22d48cfe26fIvsPRJP.jpg"
+                        alt="">
+                    <p><span class="title ellipsis">继续肝啊~</span><span class="owner"><img src="../resource/live/5b3a3efc7f9d2ad720fb1e4bpONimjXj.jpg">CC-易燃</span><span
+                            class="popularity"> 3.1万</span></p>
+                </div>
+            </li>
+            <li class="live-list-item">
+                <div class="container"><i class="mask"></i><img src="../resource/live/5bd510db7f9d2a22d48cfe26fIvsPRJP.jpg"
+                        alt="">
+                    <p><span class="title ellipsis">继续肝啊~</span><span class="owner"><img src="../resource/live/5b3a3efc7f9d2ad720fb1e4bpONimjXj.jpg">CC-易燃</span><span
+                            class="popularity"> 3.1万</span></p>
+                </div>
+            </li>
+            <li class="live-list-item">
+                <div class="container"><i class="mask"></i><img src="../resource/live/5bd510db7f9d2a22d48cfe26fIvsPRJP.jpg"
+                        alt="">
+                    <p><span class="title ellipsis">继续肝啊~</span><span class="owner"><img src="../resource/live/5b3a3efc7f9d2ad720fb1e4bpONimjXj.jpg">CC-易燃</span><span
+                            class="popularity"> 3.1万</span></p>
+                </div>
+            </li>
+            <li class="live-list-item">
+                <div class="container"><i class="mask"></i><img src="../resource/live/5bd510db7f9d2a22d48cfe26fIvsPRJP.jpg"
+                        alt="">
+                    <p><span class="title ellipsis">继续肝啊~</span><span class="owner"><img src="../resource/live/5b3a3efc7f9d2ad720fb1e4bpONimjXj.jpg">CC-易燃</span><span
+                            class="popularity"> 3.1万</span></p>
+                </div>
+            </li>
+            <li class="live-list-item">
+                <div class="container"><i class="mask"></i><img src="../resource/live/5bd510db7f9d2a22d48cfe26fIvsPRJP.jpg"
+                        alt="">
+                    <p><span class="title ellipsis">继续肝啊~</span><span class="owner"><img src="../resource/live/5b3a3efc7f9d2ad720fb1e4bpONimjXj.jpg">CC-易燃</span><span
+                            class="popularity"> 3.1万</span></p>
+                </div>
+            </li>
+            <li class="live-list-item">
+                <div class="container"><i class="mask"></i><img src="../resource/live/5bd510db7f9d2a22d48cfe26fIvsPRJP.jpg"
+                        alt="">
+                    <p><span class="title ellipsis">继续肝啊~</span><span class="owner"><img src="../resource/live/5b3a3efc7f9d2ad720fb1e4bpONimjXj.jpg">CC-易燃</span><span
+                            class="popularity"> 3.1万</span></p>
+                </div>
+            </li>
+            <li class="live-list-item">
+                <div class="container"><i class="mask"></i><img src="../resource/live/5bd510db7f9d2a22d48cfe26fIvsPRJP.jpg"
+                        alt="">
+                    <p><span class="title ellipsis">继续肝啊~</span><span class="owner"><img src="../resource/live/5b3a3efc7f9d2ad720fb1e4bpONimjXj.jpg">CC-易燃</span><span
+                            class="popularity"> 3.1万</span></p>
+                </div>
+            </li>
+            <li class="live-list-item">
+                <div class="container"><i class="mask"></i><img src="../resource/live/5bd510db7f9d2a22d48cfe26fIvsPRJP.jpg"
+                        alt="">
+                    <p><span class="title ellipsis">继续肝啊~</span><span class="owner"><img src="../resource/live/5b3a3efc7f9d2ad720fb1e4bpONimjXj.jpg">CC-易燃</span><span
+                            class="popularity"> 3.1万</span></p>
+                </div>
+            </li>
+            <li class="live-list-item">
+                <div class="container"><i class="mask"></i><img src="../resource/live/5bd510db7f9d2a22d48cfe26fIvsPRJP.jpg"
+                        alt="">
+                    <p><span class="title ellipsis">继续肝啊~</span><span class="owner"><img src="../resource/live/5b3a3efc7f9d2ad720fb1e4bpONimjXj.jpg">CC-易燃</span><span
+                            class="popularity"> 3.1万</span></p>
+                </div>
+            </li>
+            <li class="live-list-item">
+                <div class="container"><i class="mask"></i><img src="../resource/live/5bd510db7f9d2a22d48cfe26fIvsPRJP.jpg"
+                        alt="">
+                    <p><span class="title ellipsis">继续肝啊~</span><span class="owner"><img src="../resource/live/5b3a3efc7f9d2ad720fb1e4bpONimjXj.jpg">CC-易燃</span><span
+                            class="popularity"> 3.1万</span></p>
+                </div>
+            </li>
+            <li class="live-list-item hide-item"></li>
+            <li class="live-list-item hide-item"></li>
+            <li class="live-list-item hide-item"></li>
+            <li class="live-list-item hide-item"></li>
+            <li class="live-list-item hide-item"></li>
+            <li class="live-list-item hide-item"></li>
+        </ul>
+    </div>
+</body>
+
+</html>

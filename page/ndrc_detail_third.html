@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../style/base.css">
+    <link rel="stylesheet" href="../style/ndrc.css">
+    <link rel="stylesheet" href="../style/ndrc_detail_first.css">
+    <link rel="stylesheet" href="../style/top.css">
+    <script src="../script/common/jquery-1.12.4.js"></script>
+    <style>
+
+
+    </style>
+</head>
+<body>
+
+
+<div class="top">
+    <div class="topBar">
+        <div class="topBar-inner w1260">
+            <div class="topBar-logo">
+                <h1><a href="javascript:"></a></h1>
+            </div>
+            <div class="topBar-login">
+                <a href="ndrc_detail_first_register.html">注册账号</a>
+                <a href="javascript:">安卓充值</a>
+            </div>
+            <div class="topBar-toggle">
+                <span>网易游戏全目录</span><i></i>
+            </div>
+            <div class="topBar-menu w1260">
+                <div class="pc-game fl">
+                    <p class="classify-title">客户端游戏</p>
+                    <div class="viewport fl">
+                        <div class="container">
+                            <ul class="fl game-list">
+                                <li class="list-title">角色扮演</li>
+                                <li><a href="http://xyq.163.com?from=nietop" target="_blank"
+                                       class="topBar-1st">梦幻西游电脑版</a></li>
+                                <li><a href="http://xy2.163.com?from=nietop" target="_blank"
+                                       class="topBar-hot">大话2经典版</a></li>
+                                <li><a href="http://tx3.163.com?from=nietop" target="_blank" class="topBar-hot">天下3</a>
+                                </li>
+                                <li><a href="http://xqn.163.com?from=nietop" target="_blank"
+                                       class="topBar-new">新倩女幽魂</a></li>
+                                <li><a href="http://n.163.com?from=nietop" target="_blank" class="topBar-new">逆水寒</a>
+                                </li>
+                                <li><a href="http://ty.163.com?from=nietop" target="_blank" class="topBar-new">天谕</a>
+                                </li>
+                                <li><a href="http://long.163.com/?from=nietop" target="_blank"
+                                       class="topBar-new">龙魂时刻</a></li>
+                                <li><a href="http://tia.163.com?from=nietop" target="_blank" class="topBar-new">泰亚史诗</a>
+                                </li>
+                                <li><a href="http://dh2.163.com/?from=nietop" target="_blank">大话2免费版</a></li>
+                                <li><a href="http://xy3.163.com?from=nietop" target="_blank">新大话3经典版</a></li>
+                                <li><a href="http://x3.163.com?from=nietop" target="_blank">新大话3免费版</a></li>
+                                <li><a href="http://zmq.163.com?from=nietop" target="_blank">镇魔曲</a></li>
+                                <li><a href="http://zw.163.com/?from=nietop" target="_blank">镇魔曲页游</a></li>
+                                <li><a href="http://dtws2.163.com?from=nietop" target="_blank">大唐无双</a></li>
+                                <li><a href="http://wh2.163.com?from=nietop" target="_blank">武魂2</a></li>
+                                <li><a href="http://www.warcraftchina.com?from=nietop" target="_blank">魔兽世界</a></li>
+                            </ul>
+                            <ul class="fl game-list">
+                                <li class="list-title">&nbsp;</li>
+                                <li><a href="http://www.diablo3.com.cn/?from=nietop" target="_blank">暗黑破坏神3</a></li>
+                                <li><a href="http://ff.163.com?from=nietop" target="_blank">新飞飞</a></li>
+                                <li><a href="http://jl.163.com?from=nietop" target="_blank">精灵传说</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="fl game-list athletics">
+                        <li class="list-title">竞技/休闲</li>
+                        <li><a href="http://mc.163.com/?from=nietop" target="_blank" class="topBar-new">我的世界</a></li>
+                        <li><a href="http://ow.blizzard.cn/home?from=nietop" target="_blank" class="topBar-new">守望先锋</a>
+                        </li>
+                        <li><a href="http://hyp.163.com/?from=nietop" target="_blank" class="topBar-new">荒野行动Plus</a>
+                        </li>
+                        <li><a href="http://evepc.163.com/?from=nietop" target="_blank" class="topBar-new">EVEOnline</a>
+                        </li>
+                        <li><a href="http://tuji.163.com/?from=nietop" target="_blank" class="topBar-new">突击英雄</a></li>
+                        <li><a href="http://wf.163.com/?from=nietop" target="_blank" class="topBar-new">无尽战区</a></li>
+                        <li><a href="http://z.163.com/?from=nietop" target="_blank" class="topBar-new">战意</a></li>
+                        <li><a href="http://mjdj.163.com/?from=nietop" target="_blank" class="topBar-new">秘境对决</a></li>
+                        <li><a href="http://www.heroesofthestorm.com.cn/landing/?from=nietop" target="_blank">风暴英雄</a>
+                        </li>
+                        <li><a href="http://sc2.163.com/home?from=nietop" target="_blank">星际争霸Ⅱ</a></li>
+                        <li><a href="http://y3.163.com?from=nietop" target="_blank">英雄三国</a></li>
+                        <li><a href="http://www.hearthstone.com.cn/?from=nietop" target="_blank">炉石传说</a></li>
+                    </ul>
+                    <div class="more-game" id="more-pcgame">
+                        更多电脑游戏
+                    </div>
+                </div>
+                <div class="mobile-game fl">
+                    <div class="container">
+                        <p class="classify-title">手机游戏</p>
+                        <ul class="fl game-list">
+                            <li class="list-title">热门推荐</li>
+                            <li><a href="http://my.163.com/?from=nietop" target="_blank" class="topBar-hot">梦幻西游手游</a>
+                            </li>
+                            <li><a href="http://dhxy.163.com/?from=nietop" target="_blank" class="topBar-hot">大话西游手游</a>
+                            </li>
+                            <li><a href="http://qnm.163.com/?from=nietop" target="_blank" class="topBar-hot">倩女幽魂手游</a>
+                            </li>
+                            <li><a href="http://yys.163.com/?from=nietop" target="_blank" class="topBar-hot">阴阳师</a>
+                            </li>
+                            <li><a href="https://moba.163.com/?from=nietop" target="_blank"
+                                   class="topBar-hot">决战！平安京</a></li>
+                            <li><a href="http://id5.163.com/?from=nietop" target="_blank" class="topBar-hot">第五人格</a>
+                            </li>
+                            <li><a href="http://sd.163.com/?from=nietop" target="_blank" class="topBar-hot">神都夜行录</a>
+                            </li>
+                            <li><a href="http://clx.163.com/?from=nietop" target="_blank" class="topBar-hot">楚留香</a>
+                            </li>
+                            <li><a href="http://stzb.163.com/?from=nietop" target="_blank" class="topBar-hot">率土之滨</a>
+                            </li>
+                            <li><a href="http://tx.163.com/?from=nietop" target="_blank" class="topBar-hot">天下手游</a>
+                            </li>
+                            <li><a href="http://zm.163.com/?from=nietop" target="_blank" class="topBar-hot">镇魔曲手游</a>
+                            </li>
+                            <li><a href="http://qwq.163.com/?from=nietop" target="_blank" class="topBar-hot">非人学园</a>
+                            </li>
+                            <li><a href="http://dt.163.com/?from=nietop" target="_blank" class="topBar-hot">大唐无双唯美篇</a>
+                            </li>
+                            <li><a href="http://land.163.com/?from=nietop" target="_blank" class="topBar-hot">光明大陆</a>
+                            </li>
+                        </ul>
+                        <ul class="fl game-list">
+                            <li class="list-title">新品推荐</li>
+                            <li><a href="http://xy3d.163.com/?from=nietop" target="_blank" class="topBar-new">梦幻西游3D</a>
+                            </li>
+                            <li><a href="http://wxzc.163.com/?from=nietop" target="_blank" class="topBar-new">无限战车</a>
+                            </li>
+                            <li><a href="http://mc.163.com/?from=nietop" target="_blank" class="topBar-new">我的世界Minecraft</a>
+                            </li>
+                            <li><a href="http://hyj.163.com/?from=nietop" target="_blank" class="topBar-new">花与剑</a>
+                            </li>
+                            <li><a href="http://sky.163.com/?from=nietop" target="_blank" class="topBar-new">Sky光遇</a>
+                            </li>
+                            <li><a href="http://lx.163.com/?from=nietop" target="_blank" class="topBar-new">流星蝴蝶剑</a>
+                            </li>
+                            <li><a href="http://uno.163.com/?from=nietop" target="_blank" class="topBar-new">一起优诺</a>
+                            </li>
+                            <li><a href="http://pes.163.com/?from=nietop" target="_blank" class="topBar-new">实况足球</a>
+                            </li>
+                            <li><a href="http://t2.163.com/?from=nietop" target="_blank" class="topBar-new">终结者2官方手游</a>
+                            </li>
+                            <li><a href="http://hy.163.com/?from=nietop" target="_blank" class="topBar-new">荒野行动</a>
+                            </li>
+                            <li><a href="http://gd.163.com/?from=nietop" target="_blank" class="topBar-new">孤岛先锋</a>
+                            </li>
+                            <li><a href="http://jwxf.163.com/?from=nietop" target="_blank"
+                                   class="topBar-new">舰无虚发：暗星</a></li>
+                            <li><a href="http://survive.163.com/?from=nietop" target="_blank"
+                                   class="topBar-new">明日之后</a></li>
+                            <li><a href="http://pescc.163.com/?from=nietop" target="_blank"
+                                   class="topBar-new">实况：王者集结</a></li>
+                            <li><a href="http://hz.163.com//?from=nietop" target="_blank" class="topBar-new">绘真·妙笔千山</a>
+                            </li>
+                            <li><a href="http://ws.163.com//?from=nietop" target="_blank" class="topBar-new">战舰世界闪击战</a>
+                            </li>
+                        </ul>
+                        <ul class="fl game-list">
+                            <li class="list-title">&nbsp;</li>
+                            <li><a href="http://sword.163.com/?from=nietop" target="_blank"
+                                   class="topBar-new">轩辕剑龙舞云山</a></li>
+                            <li><a href="http://dot.163.com/?from=nietop" target="_blank" class="topBar-new">泰坦黎明</a>
+                            </li>
+                            <li><a href="http://zgz.163.com/?from=nietop" target="_blank" class="topBar-new">战国志</a>
+                            </li>
+                            <li><a href="http://evem.163.com/?from=nietop" target="_blank"
+                                   class="topBar-new">星战前夜：无烬星河</a></li>
+                            <li><a href="http://sg.163.com/?from=nietop" target="_blank" class="topBar-new">三国如龙传</a>
+                            </li>
+                            <li><a href="http://mytrip.163.com/?from=nietop" target="_blank" class="topBar-new">边境之旅</a>
+                            </li>
+                            <li><a href="http://qp.163.com/?from=nietop" target="_blank" class="topBar-new">网易棋牌</a>
+                            </li>
+                            <li><a href="http://sywm.163.com/?from=nietop" target="_blank" class="topBar-new">神谕文明</a>
+                            </li>
+                            <li><a href="http://yume.163.com/?from=nietop" target="_blank" class="topBar-new">悠梦YuME</a>
+                            </li>
+                            <li><a href="http://fc.163.com/?from=nietop" target="_blank" class="topBar-new">永远的7日之都</a>
+                            </li>
+                            <li><a href="http://fdhz.163.com/?from=nietop" target="_blank" class="topBar-new">反斗海战</a>
+                            </li>
+                            <li><a href="http://lh.163.com/?from=nietop" target="_blank" class="topBar-new">猎魂觉醒</a>
+                            </li>
+                            <li><a href="http://ygo.163.com/?from=nietop" target="_blank"
+                                   class="topBar-new">游戏王：决斗链接</a></li>
+                            <li><a href="http://tym.163.com/?from=nietop" target="_blank" class="topBar-new">天谕手游</a>
+                            </li>
+                            <li><a href="http://room.163.com/?from=nietop" target="_blank" class="topBar-new">迷室The
+                                Room</a></li>
+                            <li><a href="http://lyzd.163.com/?from=nietop" target="_blank" class="topBar-new">绿茵之巅</a>
+                            </li>
+                        </ul>
+                        <ul class="fl game-list">
+                            <li class="list-title">&nbsp;</li>
+                            <li><a href="http://ma3.163.com/?from=nietop" target="_blank">叛逆性百万亚瑟王</a></li>
+                            <li><a href="http://langrensha.163.com/?from=nietop" target="_blank">狼人杀</a></li>
+                            <li><a href="http://bilibili.163.com/?from=nietop" target="_blank">魔法禁书目录</a></li>
+                            <li><a href="http://mhws.163.com/?from=nietop" target="_blank">梦幻西游无双</a></li>
+                            <li><a href="http://hzgj.163.com/?from=nietop" target="_blank">魂之轨迹</a></li>
+                            <li><a href="http://mjdj.163.com/?from=nietop" target="_blank">秘境对决</a></li>
+                            <li><a href="http://myj.163.com/?from=nietop" target="_blank">九州海上牧云记</a></li>
+                            <li><a href="http://sv.163.com/?from=nietop" target="_blank">影之诗</a></li>
+                            <li><a href="http://xfj.163.com/?from=nietop" target="_blank">暴走小飞机</a></li>
+                            <li><a href="http://dui.163.com/?from=nietop" target="_blank">猪场怼怼乐</a></li>
+                            <li><a href="http://chao.163.com/?from=nietop" target="_blank">潮人篮球</a></li>
+                            <li><a href="http://wpls.163.com/?from=nietop" target="_blank">秘宝猎人:王牌猎手</a></li>
+                            <li><a href="http://sgblade.163.com/?from=nietop" target="_blank">三国诛将录</a></li>
+                            <li><a href="http://zztj.163.com/?from=nietop" target="_blank">重装突击</a></li>
+                        </ul>
+                        <ul class="fl game-list">
+                            <li class="list-title">&nbsp;</li>
+                            <li><a href="http://dance.163.com/?from=nietop" target="_blank">劲舞团</a></li>
+                            <li><a href="http://tank.163.com/?from=nietop" target="_blank">坦克连</a></li>
+                            <li><a href="http://dhrx.163.com/?from=nietop" target="_blank">大话西游热血版</a></li>
+                            <li><a href="http://dhh.163.com/?from=nietop" target="_blank">大航海之路</a></li>
+                            <li><a href="http://spp.163.com/?from=nietop" target="_blank">超物理基斗</a></li>
+                            <li><a href="http://ssydj.163.com/?from=nietop" target="_blank">三少爷的剑</a></li>
+                            <li><a href="http://mwsj.163.com/?from=nietop" target="_blank">迷雾世界</a></li>
+                            <li><a href="http://moe.163.com/?from=nietop" target="_blank">萌王EX</a></li>
+                            <li><a href="http://dao.163.com/?from=nietop" target="_blank">飞刀又见飞刀</a></li>
+                            <li><a href="http://mblr.163.com/?from=nietop" target="_blank">秘宝猎人</a></li>
+                            <li><a href="http://fmz.163.com/?from=nietop" target="_blank">伏魔咒</a></li>
+                            <li><a href="http://txx.163.com/?from=nietop" target="_blank">天下X天下</a></li>
+                            <li><a href="http://zj.163.com/?from=nietop" target="_blank">异次元战姬</a></li>
+                            <li><a href="http://yhbj.163.com/?from=nietop" target="_blank">永恒边境</a></li>
+                            <li><a href="http://wjsy.163.com/?from=nietop" target="_blank">无尽神域</a></li>
+                            <li><a href="http://zh.163.com/boot.html?from=nietop" target="_blank">斩魂手游版</a></li>
+                        </ul>
+                        <ul class="fl game-list">
+                            <li class="list-title">&nbsp;</li>
+                            <li><a href="http://yzr.163.com/?from=nietop" target="_blank">雨血：影之刃</a></li>
+                            <li><a href="http://hyy.163.com/?from=nietop" target="_blank">花语月</a></li>
+                            <li><a href="http://ldxy.163.com/?from=nietop" target="_blank">乱斗西游2</a></li>
+                            <li><a href="http://jm.163.com/?from=nietop" target="_blank">惊梦</a></li>
+                            <li><a href="http://mmx.163.com/?from=nietop" target="_blank">火拼萌萌消</a></li>
+                            <li><a href="http://dwlm.163.com/?from=nietop" target="_blank">超能动物联盟</a></li>
+                            <li><a href="http://zlj.163.com/?from=nietop" target="_blank">口袋侏罗纪</a></li>
+                            <li><a href="http://xym.163.com/?from=nietop" target="_blank">迷你西游</a></li>
+                            <li><a href="http://zgmh.163.com/?from=nietop" target="_blank">主公莫慌</a></li>
+                            <li><a href="http://wscs.163.com/?from=nietop" target="_blank">实况俱乐部</a></li>
+                            <li><a href="http://dfw9.163.com/?from=nietop" target="_blank">大富翁9</a></li>
+                            <li><a href="http://kf.163.com/?from=nietop" target="_blank">功夫熊猫3手游</a></li>
+                        </ul>
+                        <ul class="fl game-list">
+                            <li class="list-title">&nbsp;</li>
+                            <li><a href="http://yhl.163.com/?from=nietop" target="_blank">倩女幽魂录</a></li>
+                            <li><a href="http://hzhy.163.com/?from=nietop" target="_blank">魂之幻影</a></li>
+                            <li><a href="http://dtyxj.163.com/?from=nietop" target="_blank">大唐游仙记</a></li>
+                            <li><a href="http://txhd.163.com/?from=nietop" target="_blank">天下HD</a></li>
+                            <li><a href="http://jx.163.com/?from=nietop" target="_blank">无尽战区·觉醒</a></li>
+                            <li><a href="http://jjwz.163.com/?from=nietop" target="_blank">荆棘王座</a></li>
+                            <li><a href="http://sm.163.com/?from=nietop" target="_blank">西游神魔决</a></li>
+                            <li><a href="http://sq.163.com/?from=nietop" target="_blank">有杀气童话</a></li>
+                            <li><a href="http://puppy.163.com/?from=nietop" target="_blank">小汪汪</a></li>
+                            <li><a href="http://xsd.163.com/?from=nietop" target="_blank">小时代官方游戏</a></li>
+                            <li><a href="http://ywl.163.com/?from=nietop" target="_blank">妖刀少女异闻录</a></li>
+                            <li><a href="http://tnj.163.com/?from=nietop" target="_blank">猫和老鼠官方手游</a></li>
+                            <li><a href="http://gfxm.163.com/?from=nietop" target="_blank">功夫熊猫官方手游</a></li>
+                            <li><a href="http://miku.163.com/?from=nietop" target="_blank">初音速</a></li>
+                        </ul>
+                    </div>
+                    <div class="more-game" id="more-mobile-game">
+                        更多手机游戏
+                    </div>
+                </div>
+                <div class="game-tools fl">
+                    <p class="classify-title">游戏工具</p>
+                    <ul class="fl game-list">
+                        <li><a href="http://ypw.163.com/?from=nietop" target="_blank" class="topBar-hot">游品位</a></li>
+                        <li><a href="http://mumu.163.com/?from=nietop" target="_blank" class="topBar-hot">网易MuMu</a>
+                        </li>
+                        <li><a href="http://qiyu.163.com/?from=nietop" target="_blank" class="topBar-hot">奇遇俱乐部</a></li>
+                        <li><a href="http://ds.163.com/?from=nietop" target="_blank" class="topBar-new">网易大神</a></li>
+                        <li><a href="https://buff.163.com/?from=nietop" target="_blank" class="topBar-new">网易BUFF</a>
+                        </li>
+                        <li><a href="http://gift.163.com/?from=nietop" target="_blank">网易游戏印象</a></li>
+                        <li><a href="http://pt.163.com/?from=nietop" target="_blank">网易游戏平台</a></li>
+                        <li><a href="http://yxzs.163.com/?from=nietop" target="_blank" class="topBar-new">网易游戏助手</a>
+                        </li>
+                        <li><a href="http://mkey.163.com?from=nietop" target="_blank">手机将军令</a></li>
+                        <li><a href="http://ekey.163.com?from=nietop" target="_blank">将军令</a></li>
+                        <li><a href="http://cbg.163.com?from=nietop" target="_blank">藏宝阁</a></li>
+                        <li><a href="http://cc.163.com?from=nietop" target="_blank">网易CC</a></li>
+                        <li><a href="http://box.gm.163.com/?fromnietop" target="_blank">自助百宝箱</a></li>
+                        <li><a href="http://uu.163.com?from=nietop" target="_blank">网易UU加速器</a></li>
+                        <li><a href="https://bjk.163.com/hongka/?cmpid=jt-wyk-n&amp;shopid=lmk.cps.jtwykn?from=nietop"
+                               target="_blank">网易白金卡</a></li>
+                        <li><a href="http://gm.163.com?from=nietop" target="_blank">客服中心</a></li>
+                        <li><a class="topBar-btn" href="http://game.163.com/?from=nietop" target="_blank">网易游戏</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="topBar-ad">
+                <a href="javascript:">安卓充值9.8折</a>
+                <a href="javascript:">领取网易严选宝箱</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------top 结束--------------------------->
+
+
+<!--弹幕--->
+<div class="boxDom" id="boxDom">
+</div>
+
+<!-------------------漫画详情 开始--------------------->
+<div class="container">
+
+    <div class="main">
+        <p style="text-align: center">
+            <img src="../resource/images/disanhua.jpg" alt="">
+        </p>
+
+    </div>
+    <div class="returnBox">
+        <a class="returnBtn" href="ndrc.html"></a>
+    </div>
+    <div class="pageBtn">
+        <a class="nextBtn" href="ndrc_detail_second.html"></a>
+    </div>
+    <a class="hide" href="javascript:;"></a>
+    <div class="message">
+        <div class="message-inner">
+            <a class="show" href="javascript:;"></a>
+            <h2>首页&gt;学园大暴走&gt;
+                <span>第一话-天选之人</span>
+            </h2>
+            <div class="buttonSwitch off"></div>
+            <div class="cont">
+                <ul class="contWarp" id="style-6">
+                    <li></li>
+                    <li>
+                        <span> 呵呵呵呵</span>
+                        <p><i>09-11</i> <em>15:33</em></p>
+                    </li>
+                    <li>
+                        <span> 666</span>
+                        <p><i>09-02</i> <em>16:50</em></p>
+                    </li>
+                    <li>
+                        <span> 6666</span>
+                        <p><i>08-16</i> <em>23:30</em></p>
+                    </li>
+                    <li>
+                        <span> 静</span>
+                        <p><i>08-15</i> <em>15:53</em></p>
+                    </li>
+                    <li>
+                        <span> 666</span>
+                        <p><i>08-08</i> <em>19:23</em></p>
+                    </li>
+                    <li>
+                        <span> 2333</span>
+                        <p><i>08-06</i> <em>08:31</em></p>
+                    </li>
+                    <li>
+                        <span> 额</span>
+                        <p><i>08-03</i> <em>22:49</em></p>
+                    </li>
+                    <li>
+                        <span> 烦人</span>
+                        <p><i>07-27</i> <em>15:03</em></p>
+                    </li>
+                    <li>
+                        <span> 真的假的</span>
+                        <p><i>07-27</i> <em>14:32</em></p>
+                    </li>
+                    <li>
+                        <span> 无聊</span>
+                        <p><i>07-26</i> <em>22:30</em></p>
+                    </li>
+                    <li>
+                        <span> 虎扑吴亦凡了解一下</span>
+                        <p><i>07-26</i> <em>13:40</em></p>
+                    </li>
+                    <li>
+                        <span> 他妈的（违禁内容测试一下）</span>
+                        <p><i>07-26</i> <em>13:39</em></p>
+                    </li>
+                    <li>
+                        <span> 发点违禁内容测试一下，垃圾腾讯，腾讯快倒</span>
+                        <p><i>07-26</i> <em>13:39</em></p>
+                    </li>
+                    <li>
+                        <span> 挡着了</span>
+                        <p><i>07-25</i> <em>19:49</em></p>
+                    </li>
+                    <li>
+                        <span> 这东西挡道最下面一张图了mmp</span>
+                        <p><i>07-14</i> <em>20:10</em></p>
+                    </li>
+                    <li>
+                        <span> 中二的一批，我喜欢，哈哈哈</span>
+                        <p><i>07-13</i> <em>20:59</em></p>
+                    </li>
+                    <li>
+                        <span> 23333</span>
+                        <p><i>07-13</i> <em>20:59</em></p>
+                    </li>
+                    <li>
+                        <span> 怎么隐藏发弹幕的东西？</span>
+                        <p><i>07-11</i> <em>19:08</em></p>
+                    </li>
+                    <li>
+                        <span> 承包中二少年</span>
+                        <p><i>07-10</i> <em>16:37</em></p>
+                    </li>
+                    <li>
+                        <span> 漫画都可以发弹幕，666</span>
+                        <p><i>07-08</i> <em>15:52</em></p>
+                    </li>
+                    <li>
+                        <span> 这发送弹幕的位置设计的不错，网易工资真好拿</span>
+                        <p><i>07-07</i> <em>18:25</em></p>
+                    </li>
+                    <li>
+                        <span> 这个发弹幕的东西挡住漫画了……</span>
+                        <p><i>07-07</i> <em>18:23</em></p>
+                    </li>
+                    <li>
+                        <span> 非人学校eeeeeeeeeee</span>
+                        <p><i>07-06</i> <em>21:15</em></p>
+                    </li>
+                    <li>
+                        <span> 好红红火火恍恍惚惚</span>
+                        <p><i>07-06</i> <em>16:56</em></p>
+                    </li>
+                    <li>
+                        <span> q</span>
+                        <p><i>07-06</i> <em>16:36</em></p>
+                    </li>
+                    <li>
+                        <span> 哈哈哈哈</span>
+                        <p><i>07-05</i> <em>09:45</em></p>
+                    </li>
+                    <li>
+                        <span> 哈哈</span>
+                        <p><i>07-05</i> <em>06:01</em></p>
+                    </li>
+                    <li>
+                        <span> …</span>
+                        <p><i>07-04</i> <em>23:05</em></p>
+                    </li>
+                    <li>
+                        <span> hhh</span>
+                        <p><i>07-04</i> <em>19:16</em></p>
+                    </li>
+                    <li>
+                        <span> 中二少年雷震子</span>
+                        <p><i>07-03</i> <em>08:26</em></p>
+                    </li>
+                    <li>
+                        <span> I</span>
+                        <p><i>07-01</i> <em>07:34</em></p>
+                    </li>
+                    <li>
+                        <span> I</span>
+                        <p><i>07-01</i> <em>07:34</em></p>
+                    </li>
+                    <li>
+                        <span> 666</span>
+                        <p><i>07-01</i> <em>02:06</em></p>
+                    </li>
+                    <li>
+                        <span> 啦啦啦</span>
+                        <p><i>06-30</i> <em>22:44</em></p>
+                    </li>
+                    <li>
+                        <span> e</span>
+                        <p><i>06-30</i> <em>16:48</em></p>
+                    </li>
+                    <li>
+                        <span> 自恋</span>
+                        <p><i>06-25</i> <em>21:59</em></p>
+                    </li>
+                    <li>
+                        <span> 666</span>
+                        <p><i>06-25</i> <em>20:17</em></p>
+                    </li>
+                    <li>
+                        <span> 哇咔咔，我雷好帅</span>
+                        <p><i>06-25</i> <em>06:43</em></p>
+                    </li>
+                    <li>
+                        <span> 1</span>
+                        <p><i>06-25</i> <em>01:56</em></p>
+                    </li>
+                    <li>
+                        <span> 。</span>
+                        <p><i>06-25</i> <em>00:17</em></p>
+                    </li>
+                    <li>
+                        <span> 。</span>
+                        <p><i>06-25</i> <em>00:17</em></p>
+                    </li>
+                    <li>
+                        <span> (&nbsp;ﾉД`)</span>
+                        <p><i>06-24</i> <em>15:53</em></p>
+                    </li>
+                    <li>
+                        <span> 帅</span>
+                        <p><i>06-24</i> <em>10:35</em></p>
+                    </li>
+                    <li>
+                        <span> 呵呵呵</span>
+                        <p><i>06-23</i> <em>22:59</em></p>
+                    </li>
+                    <li>
+                        <span> 哈哈</span>
+                        <p><i>06-23</i> <em>21:48</em></p>
+                    </li>
+                    <li>
+                        <span> 哇咔咔</span>
+                        <p><i>06-23</i> <em>21:10</em></p>
+                    </li>
+                    <li>
+                        <span> 11</span>
+                        <p><i>06-23</i> <em>20:05</em></p>
+                    </li>
+                    <li>
+                        <span> 11</span>
+                        <p><i>06-23</i> <em>20:05</em></p>
+                    </li>
+                    <li>
+                        <span> 牛逼</span>
+                        <p><i>06-23</i> <em>18:05</em></p>
+                    </li>
+                    <li>
+                        <span> 服气</span>
+                        <p><i>06-22</i> <em>15:57</em></p>
+                    </li>
+                    <li>
+                        <span> 亚麻跌那个别走</span>
+                        <p><i>06-22</i> <em>11:27</em></p>
+                    </li>
+                    <li>
+                        <span> e</span>
+                        <p><i>06-22</i> <em>09:38</em></p>
+                    </li>
+                    <li>
+                        <span> 来报个到</span>
+                        <p><i>06-22</i> <em>07:45</em></p>
+                    </li>
+                    <li>
+                        <span> .</span>
+                        <p><i>06-21</i> <em>23:21</em></p>
+                    </li>
+                    <li>
+                        <span> 哈哈哈哈</span>
+                        <p><i>06-21</i> <em>22:11</em></p>
+                    </li>
+                    <li>
+                        <span> 吾将称霸天下</span>
+                        <p><i>06-21</i> <em>22:11</em></p>
+                    </li>
+                    <li>
+                        <span> 回老家了</span>
+                        <p><i>06-21</i> <em>20:24</em></p>
+                    </li>
+                    <li>
+                        <span> 哈</span>
+                        <p><i>06-21</i> <em>12:06</em></p>
+                    </li>
+                    <li>
+                        <span> 亚麻跌</span>
+                        <p><i>06-21</i> <em>10:37</em></p>
+                    </li>
+                    <li>
+                        <span> ( ˙-˙ )</span>
+                        <p><i>06-20</i> <em>19:53</em></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="inputBox">
+                <input type="text" id="text">
+                <a class="submit" href="javascript:;" id="submit"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------登录框--------------------------->
+<!--<div class="layer">-->
+<!--</div>-->
+<!--<form action="login.php" id="login-form" method="post">-->
+    <!--<div class="loginPop">-->
+
+        <!--<a href="javascript:;" class="close"></a>-->
+        <!--<div class="loginBox">-->
+            <!--<div class="inputId">-->
+                <!--<input type="text" placeholder="请输入ID" class="id" name="userName">-->
+            <!--</div>-->
+            <!--<div class="inputPwd">-->
+                <!--<input type="text" placeholder="请输入password" class="pwd" name="userPwd"></div>-->
+        <!--</div>-->
+        <!--<a href="javascript:;" class="loginBtn">登&nbsp &nbsp录</a>-->
+
+    <!--</div>-->
+<!--</form>-->
+<!--==========---------register--------------======-->
+<!--<div class="registerPop">-->
+    <!--&lt;!&ndash;<a href="javascript:;" class="close"></a>&ndash;&gt;-->
+    <!--<form action="register.php" id="register-form" method="post">-->
+        <!--<div class="registerBox">-->
+            <!--<div class="inputId">-->
+                <!--<input type="text" placeholder="注册ID" class="rId" name="userName">-->
+            <!--</div>-->
+            <!--<div class="inputPwd">-->
+                <!--<input type="text" placeholder="注册password" class="rPwd" name="userPwd"></div>-->
+        <!--</div>-->
+        <!--<a href="javascript:;" class="registerBtn">注&nbsp &nbsp册</a>-->
+    <!--</form>-->
+<!--</div>-->
+<!--</div>-->
+
+<!------------------------------------------------------>
+<div class="footer" style="height: 125px;">
+    <div class="share">
+        <span></span>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+    </div>
+    <div id="NIE-copyRight">
+        <style type="text/css">
+            .nie-copyright-new-inner {
+                width: 840px;
+                text-align: left;
+                margin: 0 auto;
+                padding: 15px 0 10px;
+                font-size: 12px;
+                line-height: 20px;
+            }
+
+            .nie-copyright-new-inner .nie-cn-logo {
+                display: inline-block;
+                vertical-align: middle;
+                height: 48px;
+                min-width: 300px
+            }
+
+            .nie-copyright-new-inner .nie-cn-logo a {
+                display: inline-block;
+                vertical-align: top;
+                margin-top: 2px;
+            }
+
+            .nie-copyright-new-inner .nie-cn-logo a.a0 img {
+                padding-right: 0
+            }
+
+            .nie-copyright-new-inner .nie-cn-logo img {
+                padding-right: 15px;
+                padding-top: 5px;
+                border: 0;
+                vertical-align: middle;
+            }
+
+            .nie-copyright-new-inner .nie-cn-nav {
+                display: inline-block;
+                vertical-align: top;
+                position: relative;
+                z-index: 1;
+            }
+
+            .nie-copyright-new-inner .nie-cn-nav i {
+                font-style: normal
+            }
+
+            .nie-copyright-new-inner .nie-cn-nav i.nie-cn-nav-i2 {
+                height: 28px;
+                line-height: 28px;
+                text-align: left;
+            }
+
+            .nie-copyright-new-inner .nie-cn-nav a {
+                text-decoration: none
+            }
+
+            .nie-copyright-new-inner .nie-cn-nav a:hover {
+                text-decoration: underline
+            }
+
+            .nie-copyright-new-inner .nie-cn-nav .nie-cn-reportcenter {
+                padding-left: 18px;
+                font-style: normal;
+            }
+
+            .nie-copyright-new-inner .nie-cn-nav a.nie-cn-guardianship {
+                display: inline-block;
+                color: #fff;
+                background-color: #610000;
+                position: absolute;
+                z-index: 2;
+                right: 0;
+                height: 26px;
+                line-height: 26px;
+                padding: 0 3px;
+                top: 21px
+            }
+
+            #NIE-copyRight a.nie-cn-guardianship {
+                color: #fff;
+            }
+
+            .nie-copyright-new-inner .nie-cn-part2 {
+                padding-top: 10px;
+                line-height: 24px
+            }
+
+            .nie-copyright-new-inner .nie-cn-part2 a {
+                text-decoration: none;
+                display: inline-block;
+                vertical-align: top
+            }
+
+            .nie-copyright-new-inner .nie-cn-part2 a:hover {
+                text-decoration: underline
+            }
+
+            .nie-copyright-new-inner .nie-cn-part2 span {
+                display: inline-block;
+                vertical-align: top;
+            }
+
+            .nie-cn-part2 a img {
+                vertical-align: top
+            }
+        </style>
+
+        <div class="nie-copyright-new-inner">
+            <div class="nie-cn-part1">
+			<span class="nie-cn-logo">
+			<a class="a0" href="http://www.163.com" target="_blank"><img src="../resource/images/wangyi_logo.png"></a><a
+                    class="a1" href="http://game.163.com" target="_blank"><img src="../resource/images/wangyi_game.png"></a>
+			</span>
+                <span class="nie-cn-nav">
+				<i class="nie-cn-nav-i1">
+				<a href="http://gb.corp.163.com/gb/about/overview.html" target="_blank">公司简介</a> - <a
+                        href="http://help.163.com/" target="_blank">客户服务</a> - <a
+                        href="http://gb.corp.163.com/gb/legal.html" target="_blank">相关法律</a> - <a
+                        href="http://game.163.com/about/" target="_blank">网易游戏</a> - <a
+                        href="http://game.163.com/contact/" target="_blank">联系我们</a> - <a
+                        href="http://game.163.com/contact/business.html" target="_blank">商务合作</a> - <a
+                        href="http://hr.game.163.com/index.html" target="_blank">加入我们</a>
+				</i>
+				<br>
+				<i class="nie-cn-nav-i2">
+				网易公司版权所有 ©1997-2018 <a class="nie-cn-guardianship" href="http://www.leihuo.net/jiazhang.html"
+                                       target="_blank">点击查看家长监护工程 &gt; </a>
+				</i>
+			</span>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--<script src="script/top.script"></script>-->
+
+<script src="../script/animation.js"></script>
+<script>
+
+    //        $(function () {
+    //            $(document).on('keydown',function (e) {
+    //                console.log(e.keyCode);
+    //            })
+    //        })
+
+
+    //-------------------------top--------------------------
+
+
+//    $.fn.toggle = function (fn, fn2) {
+//        var args = arguments, guid = fn.guid || $.guid++, i = 0,
+//            toggler = function (event) {
+//                var lastToggle = ( $._data(this, "lastToggle" + fn.guid) || 0 ) % i;
+//                $._data(this, "lastToggle" + fn.guid, lastToggle + 1);
+//                event.preventDefault();
+//                return args[lastToggle].apply(this, arguments) || false;
+//            };
+//        toggler.guid = guid;
+//        while (i < args.length) {
+//            args[i++].guid = guid;
+//        }
+//        return this.click(toggler);
+//    }
+//
+//    $(function () {
+//        //更 多电脑游戏按钮切换效果
+//        $('#more-pcgame').toggle(function () {
+//            $(this).text('<<');
+//            $('.pc-game').style('z-index', 1).animate({
+//                width: 434
+//            }).find('.viewport').animate({
+//                width: 270
+//            });
+//            $('.mobile-game').animate({
+//                width: '693px'
+//            });
+//        }, function () {
+//            $(this).text('更多电脑游戏');
+//            $('.pc-game').animate({
+//                width: 299
+//            }).find('.viewport').animate({
+//                width: 135
+//            });
+//            $('.mobile-game').animate({
+//                width: '828px'
+//            }).find('.viewport').animate({
+//                width: 135
+//            });
+//        })
+//        //更多手机游戏按钮切换效果
+//        $('#more-mobile-game').toggle(function () {
+//            $(this).text('>>');
+//            $('.mobile-game').animate({
+//                width: '993px'
+//            })
+//            $('.pc-game').animate({
+//                width: 134
+//            }).find('#more-pcgame').hide();
+//
+//        }, function () {
+//            $(this).text('更多手机游戏');
+//            $('.mobile-game').animate({
+//                width: '828px'
+//            })
+//            $('.pc-game').animate({
+//                width: 299
+//            }).find('#more-pcgame').show();
+//        })
+//    })
+
+
+    //--------------------留言板显隐-----------------------
+    $(window).on('scroll', function () {
+        var scroll = $(window).scrollTop() + 40
+        console.log(scroll)
+        $('.message').css({top: scroll})
+    })
+
+    $('.show').on('click', function () {
+
+        $('.message-inner').animate({
+            right: -501
+        }, 500)
+        $('.hide').show(500)
+    })
+
+    $('.hide').on('click', function () {
+
+        $('.message-inner').animate({
+            right: 0
+        }, 500)
+        $('.hide').hide(500)
+
+    })
+
+
+    //弹幕显隐
+    $(function () {
+        $('.buttonSwitch').on('click', function () {
+            console.log('1111')
+            $('.buttonSwitch').toggleClass('on')
+            $('#boxDom').toggle(1000)
+
+        })
+
+        //读取输入框
+        $('.submit').on('click', function () {
+            var text = $('.inputBox input').val()
+            if (text) {
+                $('.cont ul').prepend($('<li>' + text + '</li>'))
+//        $('.inputBox input').val('')
+            } else {
+                alert('留言不能为空')
+            }
+        })
+    })
+
+
+    //    -----------弹幕发射---------------
+    $(function () {
+
+        var colors = ['red', 'green', 'hotpink', 'pink', 'cyan', 'yellowgreen', 'purple', 'deepskyblue']
+        $('#submit').on('click', function () {
+            var randomColor = parseInt(Math.random() * colors.length)
+            var randomY = parseInt(Math.random() * 400)
+            var fontSize = parseInt(Math.random() * 40)
+
+            $("<span class='biu'></span>").text($('#text').val())
+                .css('color', colors[randomColor])
+                .css('left', '1400px')
+                .css('top', randomY)
+                .css('font-size', fontSize)
+                .animate({left: -500}, 10000, 'linear', function () {
+//                    $(this).remove()
+                })
+                .appendTo('#boxDom')
+        })
+        $('#text').keydown(function (e) {
+            if (e.keyCode == 13) {
+                $('#submit').click()
+            }
+        })
+    })
+
+    //    ------------------login----------------------------
+    $(function () {
+        $('.close').on('click', function () {
+            $('.layer').remove()
+            $('.loginPop').remove()
+        })
+
+        //----------------register  按钮--------
+        $('.registerBtn').on('click', function () {
+
+            $('#register-form').submit()
+            $('.close').show()
+            $('.registerPop').remove()
+        })
+
+//        ----------------login  按钮-----------
+        $('.loginBtn').on('click',function () {
+            $('#login-form').submit()
+        })
+
+    })
+
+
+</script>
+</body>
+</html>
