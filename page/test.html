@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy"
+        content="script-src 'self' *.tencent.com *.idqqimg.com *.qq.com *.oa.com 'unsafe-inline' 'unsafe-eval';">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>提示</title>
+    <style>
+        html,
+        body,
+        div,
+        h1,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: BlinkMacSystemFont, "Helvetica", "lucida Grande", "PingFang SC", "SCHeiti", "Microsoft YaHei";
+            background: #fff;
+            line-height: 1.5;
+            color: #000;
+            font-size: 14px;
+        }
+
+        .spam_wrap {
+            padding: 70px 20px 25px;
+            text-align: center;
+            max-width: 375px;
+            margin: 0 auto;
+        }
+
+        .spam_remindTitle {
+            font-size: 18px;
+            font-weight: normal;
+            margin-top: 22px;
+        }
+
+        .spam_remindLink {
+            color: #5683ba;
+            margin: 150px 50px 0;
+            word-wrap: break-word;
+            word-break: break-word;
+            padding: 10px 14px;
+            border: 1px solid #5683ba;
+            border-radius: 4px;
+        }
+
+        .spam_remindLink:active {
+            background-color: #5683ba;
+            color: #fff;
+        }
+
+        .spam_remindLink p {
+            text-align: left;
+        }
+
+        .spam_btn {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-appearance: none;
+            display: inline-block;
+            margin-top: 50px;
+            width: 230px;
+            height: 42px;
+            border: 1px solid #437DBA;
+            border-radius: 4px;
+            font-size: 16px;
+            color: #437DBA;
+            line-height: 42px;
+            text-decoration: none;
+        }
+
+        .spam_btn:hover {
+            text-decoration: none;
+        }
+
+        .ww_openMobileImg_infoLarge {
+            background-position: -90px 0;
+            width: 80px;
+            height: 80px;
+        }
+
+        .ww_openMobileImg {
+            display: inline-block;
+            overflow: hidden;
+            font-size: 0;
+            line-height: 0;
+        }
+
+        .ww_openMobileImg_FailLarge,
+        .ww_openMobileImg_Spinner,
+        .ww_openMobileImg_WeWorkLogoWhite,
+        .ww_openMobileImg_infoLarge {
+            background-image: url(https://cdn.m.tencent.com/sdc/hrcloud/image/open.png);
+            background-size: 170px 109px;
+        }
+
+        .spam_wrap {
+            padding: 70px 20px 25px;
+            text-align: center;
+            max-width: 375px;
+            margin: 0 auto;
+        }
+
+        .spam_remindLink p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="spam_wrap"><span class="ww_openMobileImg ww_openMobileImg_infoLarge"></span>
+        <h1 class="spam_remindTitle">请在微信客户端打开链接</h1>
+        <div class="spam_remindLink">
+            <p>在微信中打开</p>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    function openWX() {
+        location.href = "weixin://dl/business/?ticket=t5ced4c52c414c723c1a22699a2843b18"
+    }
+    document.addEventListener('WeixinJSBridgeReady', function () {
+        WeixinJSBridge.on('menu:share:appmessage', function () {
+            WeixinJSBridge.invoke('sendAppMessage', {
+                title: 'sdc.qq.com', // 分享标题
+                desc: 'sdc.qq.com', // 分享描述
+                link: window.location.href, // 分享链接
+                success: function () { },
+                cancel: function () { }
+            });
+        })
+    }, false)
+    document.getElementsByClassName("spam_remindLink")[0].addEventListener("click", function () {
+        openWX()
+    })
+    openWX()
+</script>
+
+</html>
